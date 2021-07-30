@@ -1,0 +1,21 @@
+@import "../../theme/theme.scss";
+
+.row {
+  display: flex;
+
+  .cardCell {
+    @include centering;
+
+    padding: 12px;
+    width: 25px;
+    height: 25px;
+
+    &:hover {
+      background-color: #ccc;
+    }
+  }
+}
+
+.clicked {
+  background-color: #ccc;
+}
