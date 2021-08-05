@@ -1,0 +1,12 @@
+@import '../../theme/theme.scss';
+
+.radioButton {
+	padding: 12px 20px;
+	border-radius: 12px;
+	cursor: pointer;
+	outline: none;
+
+	&:hover {
+		background-color: #ccc;
+	}
+}

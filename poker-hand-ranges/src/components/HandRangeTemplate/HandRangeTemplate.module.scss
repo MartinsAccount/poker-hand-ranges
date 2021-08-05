@@ -9,6 +9,7 @@
 		padding: 12px;
 		width: 25px;
 		height: 25px;
+		cursor: pointer;
 
 		&:hover {
 			background-color: #ccc;
@@ -18,6 +19,18 @@
 
 [data-action='fold'] {
 	background-color: red;
+}
+[data-action='limp'] {
+	background-color: green;
+}
+[data-action='call'] {
+	background-color: yellow;
+}
+[data-action='allin'] {
+	background-color: blue;
+}
+[data-action='raise'] {
+	background-color: blueviolet;
 }
 
 .clicked {

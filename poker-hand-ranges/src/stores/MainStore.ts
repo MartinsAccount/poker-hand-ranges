@@ -1,9 +1,11 @@
 import { action, observable, toJS } from 'mobx';
 import { CARDS } from '../models/constants';
-import { Hand } from '../models/models';
+import { Actions, Hand } from '../models/models';
 
 export class MainStore {
 	@observable handRange: Array<Hand[]> = [];
+	@observable selectedAction: Actions = 'fold';
+	@observable mouseState: string = 'up';
 
 	@action createRange() {
 		// card schema : "QJo" || "32s" || "KK"
@@ -46,15 +48,30 @@ export class MainStore {
 		console.log(this.handRange);
 	}
 
-	@action changeHandRange(hand: Hand) {
+	@action changeHandRange(hand: Hand, e?) {
 		// console.log(hand);
-		this.handRange.forEach((row) => {
-			row.forEach((cell) => {
-				if (cell.hand === hand.hand) {
-					// console.log(toJS(cell));
-					cell.action = 'fold';
-				}
+		if (this.mouseState === 'down') {
+			this.handRange.forEach((row) => {
+				row.forEach((cell) => {
+					if (cell.hand === hand.hand) {
+						// console.log(toJS(cell));
+						cell.action = this.selectedAction;
+					}
+				});
 			});
-		});
+		}
+	}
+
+	@action changeMouseType(type: string) {
+		if (type === 'down') {
+			this.mouseState = 'down';
+			return;
+		}
+
+		this.mouseState = 'up';
+	}
+
+	@action selectAction(action: Actions) {
+		this.selectedAction = action;
 	}
 }
