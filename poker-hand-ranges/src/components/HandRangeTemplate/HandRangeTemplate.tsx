@@ -57,14 +57,18 @@ export default class HandRangeTemplate extends Component<IHandRangeTemplateProps
 	}
 
 	render() {
+		const { MainStore } = this.props;
+
 		return (
 			<div>
-				{this.props.MainStore!.handRange.map((row: Hand[]) => (
-					<div className={styles.row}>
+				{MainStore!.handRange.map((row: Hand[], index) => (
+					<div key={index} className={styles.row}>
 						{row.map((cell: Hand) => (
 							<div
-								// onClick={() => this.changeHandRange(cell.card)}
-								className={`${styles.cardCell} ${cell.action ? styles.clicked : null}`}
+								key={cell.hand}
+								className={styles.cardCell}
+								data-action={cell.action}
+								onClick={() => MainStore!.changeHandRange(cell)}
 							>
 								{cell.hand}
 							</div>

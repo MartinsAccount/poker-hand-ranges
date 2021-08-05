@@ -1,4 +1,4 @@
-import { action, observable } from 'mobx';
+import { action, observable, toJS } from 'mobx';
 import { CARDS } from '../models/constants';
 import { Hand } from '../models/models';
 
@@ -14,7 +14,7 @@ export class MainStore {
 		// index === round: "card + card"  => "QQ"
 
 		for (let i = 0; i < CARDS.length; i++) {
-			let round = i;
+			let round: number = i;
 			let handRangeRow: Hand[] = [];
 
 			CARDS.forEach((card: string, index: number) => {
@@ -46,10 +46,15 @@ export class MainStore {
 		console.log(this.handRange);
 	}
 
-	@action changeHandRange(card: any) {
-		// console.log(card);
-		const cardObj = this.handRange.flat().find((item: any) => item.card === card);
-
-		console.log(cardObj);
+	@action changeHandRange(hand: Hand) {
+		// console.log(hand);
+		this.handRange.forEach((row) => {
+			row.forEach((cell) => {
+				if (cell.hand === hand.hand) {
+					// console.log(toJS(cell));
+					cell.action = 'fold';
+				}
+			});
+		});
 	}
 }

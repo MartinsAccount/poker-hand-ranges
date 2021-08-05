@@ -1,21 +1,25 @@
-@import "../../theme/theme.scss";
+@import '../../theme/theme.scss';
 
 .row {
-  display: flex;
+	display: flex;
 
-  .cardCell {
-    @include centering;
+	.cardCell {
+		@include centering;
 
-    padding: 12px;
-    width: 25px;
-    height: 25px;
+		padding: 12px;
+		width: 25px;
+		height: 25px;
 
-    &:hover {
-      background-color: #ccc;
-    }
-  }
+		&:hover {
+			background-color: #ccc;
+		}
+	}
+}
+
+[data-action='fold'] {
+	background-color: red;
 }
 
 .clicked {
-  background-color: #ccc;
+	background-color: #ccc;
 }

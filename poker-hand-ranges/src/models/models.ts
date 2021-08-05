@@ -12,6 +12,7 @@ export interface Hand {
 }
 
 export interface HandRange {
+	id: number;
 	title: string;
 	strategy: Strategies;
 	hero: { Position: Positions; Action: Actions };
