@@ -1,7 +1,8 @@
-import { inject, observer } from "mobx-react";
-import React, { Component } from "react";
-import { MainStore } from "../../stores/MainStore";
-import styles from "./HandRangeTemplate.module.scss";
+import { inject, observer } from 'mobx-react';
+import React, { Component } from 'react';
+import { Hand } from '../../models/models';
+import { MainStore } from '../../stores/MainStore';
+import styles from './HandRangeTemplate.module.scss';
 
 // [{
 //     name: "sb",
@@ -41,40 +42,36 @@ import styles from "./HandRangeTemplate.module.scss";
 // ];
 
 interface IHandRangeTemplateProps {
-    MainStore?: MainStore;
+	MainStore?: MainStore;
 }
 
-@inject("MainStore")
+@inject('MainStore')
 @observer
 export default class HandRangeTemplate extends Component<IHandRangeTemplateProps> {
-    handRange = [];
+	// constructor(props: any) {
+	//     super(props);
+	// }
 
-    // constructor(props: any) {
-    //     super(props);
-    // }
+	componentDidMount() {
+		this.props.MainStore!.createRange();
+	}
 
-    componentDidMount() {
-        this.props.MainStore!.createRange();
-    }
-
-    render() {
-        return (
-            <div>
-                {this.props.MainStore!.handRange.map((row) => (
-                    <div className={styles.row}>
-                        {row.map((cell) => (
-                            <div
-                                // onClick={() => this.changeHandRange(cell.card)}
-                                className={`${styles.cardCell} ${
-                                    cell.clicked ? styles.clicked : null
-                                }`}
-                            >
-                                {cell.card}
-                            </div>
-                        ))}
-                    </div>
-                ))}
-            </div>
-        );
-    }
+	render() {
+		return (
+			<div>
+				{this.props.MainStore!.handRange.map((row: Hand[]) => (
+					<div className={styles.row}>
+						{row.map((cell: Hand) => (
+							<div
+								// onClick={() => this.changeHandRange(cell.card)}
+								className={`${styles.cardCell} ${cell.action ? styles.clicked : null}`}
+							>
+								{cell.hand}
+							</div>
+						))}
+					</div>
+				))}
+			</div>
+		);
+	}
 }
