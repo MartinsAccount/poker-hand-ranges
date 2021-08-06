@@ -27,9 +27,8 @@ export default class HandRangeTemplate extends Component<IHandRangeTemplateProps
 								key={cell.hand}
 								className={styles.cardCell}
 								data-action={cell.action}
-								onMouseDown={() => MainStore!.changeMouseType('down')}
-								onMouseUp={() => MainStore!.changeMouseType('up')}
-								// onMouseOver={(e) => MainStore!.changeHandRange(e, cell)}
+								onMouseDown={(e) => MainStore!.isMouseDownToggle(e)}
+								onMouseUp={(e) => MainStore!.isMouseDownToggle(e)}
 								onMouseMove={() => MainStore!.changeHandRange(cell)}
 							>
 								{cell.hand}
