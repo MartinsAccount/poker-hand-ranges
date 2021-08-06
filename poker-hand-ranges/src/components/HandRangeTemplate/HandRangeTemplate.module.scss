@@ -2,6 +2,7 @@
 
 .row {
 	display: flex;
+	user-select: none;
 
 	.cardCell {
 		@include centering;

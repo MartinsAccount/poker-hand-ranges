@@ -1,6 +1,6 @@
 import { action, observable, toJS } from 'mobx';
 import { CARDS } from '../models/constants';
-import { Actions, Hand } from '../models/models';
+import { Actions, Hand, HandRange } from '../models/models';
 
 export class MainStore {
 	@observable handRange: Array<Hand[]> = [];

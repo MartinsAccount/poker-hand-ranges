@@ -29,7 +29,6 @@ export default class HandRangeTemplate extends Component<IHandRangeTemplateProps
 								data-action={cell.action}
 								onMouseDown={() => MainStore!.changeMouseType('down')}
 								onMouseUp={() => MainStore!.changeMouseType('up')}
-								// onMouseOver={(e) => MainStore!.changeHandRange(e, cell)}
 								onMouseMove={() => MainStore!.changeHandRange(cell)}
 							>
 								{cell.hand}
