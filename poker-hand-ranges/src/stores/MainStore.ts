@@ -1,11 +1,15 @@
 import { action, observable, toJS } from 'mobx';
-import { CARDS } from '../models/constants';
-import { Actions, Hand, HandRange } from '../models/models';
+import { CARDS, POSITIONS } from '../models/constants';
+import { Actions, Hand, HandRange, Player, Positions } from '../models/models';
 
 export class MainStore {
 	@observable handRange: Array<Hand[]> = [];
-	@observable selectedAction: Actions = 'fold';
 	@observable isMouseDown: boolean = false;
+	@observable selectedAction: Actions = 'fold';
+	@observable heroParams: Player = { position: null, action: null };
+	@observable villainParams: Player = { position: null, action: null };
+	@observable isOpenPositions: { hero: boolean; villain: boolean } = { hero: false, villain: false };
+	@observable positionFilter: { hero: Positions; villain: Positions } = { hero: 'bb', villain: 'bb' };
 
 	@action createRange() {
 		// card schema : "QJo" || "32s" || "KK"
@@ -62,8 +66,8 @@ export class MainStore {
 		}
 	}
 
-	@action isMouseDownToggle(e: any) {
-		if (e === 'mousedown') {
+	@action isMouseDownToggle(e: React.MouseEvent<HTMLElement>) {
+		if (e.type === 'mousedown') {
 			this.isMouseDown = true;
 			return;
 		}
@@ -72,5 +76,23 @@ export class MainStore {
 
 	@action selectAction(action: Actions) {
 		this.selectedAction = action;
+	}
+	@action togglePositions(player: 'hero' | 'villain') {
+		this.isOpenPositions[player] = !this.isOpenPositions[player];
+	}
+
+	@action changePositions(position: Positions, player: 'hero' | 'villain') {
+		switch (player) {
+			case 'hero':
+				this.heroParams.position = position;
+				break;
+			case 'villain':
+				this.villainParams.position = position;
+				break;
+		}
+	}
+
+	@action positionFiltering(pos: Positions, player: 'hero' | 'villain') {
+		this.positionFilter[player] = pos;
 	}
 }

@@ -1,0 +1,45 @@
+@import '../../theme/theme.scss';
+
+.positionsContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	padding: 15px;
+
+	.positionButton {
+		@include centering;
+		padding: 12px;
+		font-size: 16px;
+		height: 30px;
+		width: 30px;
+		border-radius: 50px;
+		cursor: pointer;
+		outline: none;
+		border: none;
+		color: $white;
+		background-color: $primary;
+
+		&:hover {
+			background-color: $primaryHover;
+		}
+	}
+
+	.activeButton {
+		background-color: $primaryHover;
+	}
+}
+
+.heroPositions {
+	position: fixed;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.villainPositions {
+	position: fixed;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}

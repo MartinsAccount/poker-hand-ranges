@@ -1,12 +1,20 @@
 @import '../../theme/theme.scss';
 
 .radioButton {
+	@include centering;
 	padding: 12px 20px;
 	border-radius: 12px;
+	font-size: 18px;
+	height: 80px;
+	width: 80px;
+	border-radius: 50px;
 	cursor: pointer;
 	outline: none;
+	border: none;
+	color: $white;
+	background-color: $primary;
 
 	&:hover {
-		background-color: #ccc;
+		background-color: $primaryHover;
 	}
 }

@@ -1,37 +1,41 @@
 @import '../../theme/theme.scss';
 
+[data-action='fold'] {
+	background-color: $fold;
+}
+[data-action='limp'] {
+	background-color: $limp;
+}
+[data-action='call'] {
+	background-color: $call;
+}
+[data-action='allin'] {
+	background-color: $allin;
+}
+[data-action='raise'] {
+	background-color: $raise;
+}
+
 .row {
 	display: flex;
+	background-color: $fold;
 	user-select: none;
 
 	.cardCell {
 		@include centering;
 
 		padding: 12px;
-		width: 25px;
-		height: 25px;
-		cursor: pointer;
+		width: $cellWidth;
+		height: $cellHeight;
+		cursor: cell;
+		// color: $background;
+		color: rgb(226, 226, 226);
 
 		&:hover {
-			background-color: #ccc;
+			// opacity: 0.8;
+			box-shadow: 0 0 0 4px rgba($color: #cecece, $alpha: 0.1);
 		}
 	}
-}
-
-[data-action='fold'] {
-	background-color: red;
-}
-[data-action='limp'] {
-	background-color: green;
-}
-[data-action='call'] {
-	background-color: yellow;
-}
-[data-action='allin'] {
-	background-color: blue;
-}
-[data-action='raise'] {
-	background-color: blueviolet;
 }
 
 .clicked {

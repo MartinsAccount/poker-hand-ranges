@@ -1,8 +1,25 @@
 // Colors
+$background: #f5f3f4;
+$white: #fff;
+$primary: #ba181b;
+$primaryHover: #660708;
+$dark: #161a1d;
+$black: #0b090a;
+
+// actions
+$fold: #0f4c5c;
+$allin: #9a031e;
+$raise: #e36414;
+$call: #fb8b24;
+$limp: #5f0f40;
+
+// table
+$cellWidth: 20px;
+$cellHeight: 20px;
 
 // mixins
 @mixin centering {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

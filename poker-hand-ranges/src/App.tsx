@@ -1,9 +1,10 @@
-import './App.css';
+import './App.scss';
 import React, { Component } from 'react';
 import HandRangeTemplate from './components/HandRangeTemplate/HandRangeTemplate';
 import { Provider } from 'mobx-react';
 import { MainStore } from './stores/MainStore';
 import HandRangeConfig from './components/HandRangeConfig/HandRangeConfig';
+import PositionFilter from './components/PositionFilter/PositionFilter';
 
 interface IAppProps {
 	MainStore?: MainStore;
@@ -27,6 +28,7 @@ export default class App extends Component<IAppProps> {
 				<div className="App">
 					<HandRangeTemplate />
 					<HandRangeConfig />
+					<PositionFilter />
 				</div>
 			</Provider>
 		);
