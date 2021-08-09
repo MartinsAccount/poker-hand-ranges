@@ -19,7 +19,7 @@ export default class HandRangeTemplate extends Component<IHandRangeTemplateProps
 		const { MainStore } = this.props;
 
 		return (
-			<div>
+			<div className={styles.handRangeTable}>
 				{MainStore!.handRange.map((row: Hand[], index) => (
 					<div key={index} className={styles.row}>
 						{row.map((cell: Hand) => (

@@ -1,7 +1,11 @@
 // Colors
-$background: #f5f3f4;
+// $background: #f5f3f4;
+$background: #393a3e;
+// $background: #212429;
+
 $white: #fff;
-$primary: #ba181b;
+// $primary: #ba181b;
+$primary: #1bbd5c;
 $primaryHover: #660708;
 $dark: #161a1d;
 $black: #0b090a;
@@ -13,9 +17,15 @@ $raise: #e36414;
 $call: #fb8b24;
 $limp: #5f0f40;
 
+// others
+$neumorph: 8px 8px 19px $background, -8px -8px 19px $background;
+$smoothShadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12),
+	0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
+
 // table
-$cellWidth: 20px;
-$cellHeight: 20px;
+$cellWidth: 10px;
+$cellHeight: 10px;
+$cellPadding: 18px;
 
 // mixins
 @mixin centering {

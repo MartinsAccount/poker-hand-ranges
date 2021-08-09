@@ -9,24 +9,28 @@
 
 	.positionButton {
 		@include centering;
-		padding: 12px;
+		padding: 22px;
 		font-size: 16px;
-		height: 30px;
-		width: 30px;
+		height: 60px;
+		width: 60px;
 		border-radius: 50px;
 		cursor: pointer;
 		outline: none;
 		border: none;
 		color: $white;
-		background-color: $primary;
+		// background-color: $primary;
+		background-color: $background;
+		box-shadow: 8px 8px 16px #1a1d21, -8px -8px 16px #282b31;
 
 		&:hover {
-			background-color: $primaryHover;
+			// background-color: $primaryHover;
+			box-shadow: inset 8px 8px 16px #1a1d21, inset -8px -8px 16px #282b31;
 		}
 	}
 
 	.activeButton {
 		background-color: $primaryHover;
+		box-shadow: inset 4px 4px 16px #1a1d21, inset -4px -4px 16px #282b31;
 	}
 }
 

@@ -16,24 +16,31 @@
 	background-color: $raise;
 }
 
-.row {
-	display: flex;
-	background-color: $fold;
-	user-select: none;
+.handRangeTable {
+	box-shadow: $smoothShadow;
+	height: 100%;
 
-	.cardCell {
-		@include centering;
+	.row {
+		display: flex;
+		background-color: $fold;
+		user-select: none;
 
-		padding: 12px;
-		width: $cellWidth;
-		height: $cellHeight;
-		cursor: cell;
-		// color: $background;
-		color: rgb(226, 226, 226);
+		.cardCell {
+			@include centering;
 
-		&:hover {
-			// opacity: 0.8;
-			box-shadow: 0 0 0 4px rgba($color: #cecece, $alpha: 0.1);
+			font-size: 12px;
+			// padding: 22px;
+			padding: $cellPadding;
+			width: $cellWidth;
+			height: $cellHeight;
+			cursor: cell;
+			// color: $background;
+			color: rgb(226, 226, 226);
+
+			&:hover {
+				// opacity: 0.8;
+				box-shadow: 0 0 0 4px rgba($color: #cecece, $alpha: 0.1);
+			}
 		}
 	}
 }
