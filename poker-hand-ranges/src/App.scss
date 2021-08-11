@@ -57,6 +57,8 @@ html {
 	&:hover {
 		color: $background;
 		border: none;
+		transform: translateY(-3px);
+		box-shadow: 0 10px 20px rgba(206, 206, 206, 0.2);
 
 		&::before {
 			width: 100%;
