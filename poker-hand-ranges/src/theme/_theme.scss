@@ -1,6 +1,7 @@
 // Colors
 // $background: #f5f3f4;
-$background: #393a3e;
+// $background: #393a3e;
+$background: #333333;
 // $background: #212429;
 
 $white: #fff;
@@ -16,11 +17,19 @@ $allin: #9a031e;
 $raise: #e36414;
 $call: #fb8b24;
 $limp: #5f0f40;
+$_3bet: #fff;
+$_4bet: #fff;
 
 // others
 $neumorph: 8px 8px 19px $background, -8px -8px 19px $background;
+
+// Box shadows
 $smoothShadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12),
 	0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
+$dreamySoftShadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07),
+	0 8px 16px rgba(0, 0, 0, 0.07), 0 16px 32px rgba(0, 0, 0, 0.07), 0 32px 64px rgba(0, 0, 0, 0.07);
+$shortShadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11),
+	0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11);
 
 // table
 $cellWidth: 10px;
