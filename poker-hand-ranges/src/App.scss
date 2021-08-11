@@ -16,7 +16,7 @@ html {
 
 .App {
 	text-align: center;
-	display: flex;
+	@include centering;
 	background-color: $background;
 	padding: 50px 300px;
 	min-height: 100vh;

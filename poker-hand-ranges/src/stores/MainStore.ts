@@ -1,10 +1,11 @@
-import { action, observable, toJS } from 'mobx';
+import { action, flow, observable, toJS } from 'mobx';
 import { CARDS, POSITIONS } from '../models/constants';
 import { Actions, Hand, HandRange, Player, Positions } from '../models/models';
 
 export class MainStore {
 	@observable handRange: Array<Hand[]> = [];
 	@observable isMouseDown: boolean = false;
+	@observable isOpenModal: boolean = false;
 	@observable selectedAction: Actions = 'fold';
 	@observable heroParams: Player = { position: null, action: null };
 	@observable villainParams: Player = { position: null, action: null };
@@ -18,6 +19,7 @@ export class MainStore {
 		// index < round: "card + cards[round] + o"  => "AKo"
 		// index > round: "cards[round] + card + s"  => "AKs"
 		// index === round: "card + card"  => "QQ"
+		let _handRange: Array<Hand[]> = [];
 
 		for (let i = 0; i < CARDS.length; i++) {
 			let round: number = i;
@@ -47,9 +49,14 @@ export class MainStore {
 				}
 			});
 
-			this.handRange.push(handRangeRow);
+			_handRange.push(handRangeRow);
 		}
+		this.handRange = _handRange;
 		console.log(this.handRange);
+	}
+
+	@action toggleModal() {
+		this.isOpenModal = !this.isOpenModal;
 	}
 
 	@action changeHandRange(hand: Hand) {
@@ -95,4 +102,17 @@ export class MainStore {
 	@action positionFiltering(pos: Positions, player: 'hero' | 'villain') {
 		this.positionFilter[player] = pos;
 	}
+
+	saveNewTable = flow(function* (this: MainStore) {
+		const fetchOptions = {
+			method: 'POST',
+			mode: 'cors' as RequestMode,
+			body: JSON.stringify(this.handRange),
+			headers: {
+				'Content-Type': 'application/json'
+			}
+		};
+
+		yield fetch('http://localhost:5000/saveTable', fetchOptions);
+	});
 }

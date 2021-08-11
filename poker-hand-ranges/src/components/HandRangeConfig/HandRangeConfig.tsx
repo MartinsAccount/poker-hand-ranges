@@ -55,6 +55,8 @@ export default class HandRangeConfig extends Component<IHandRangeConfigProps> {
 					</div>
 				</div>
 
+				<button onClick={() => MainStore.saveNewTable()}>Save</button>
+
 				{/* <ActionRadioButton action="fold" />
 				<ActionRadioButton action="limp" />
 				<ActionRadioButton action="allin" />

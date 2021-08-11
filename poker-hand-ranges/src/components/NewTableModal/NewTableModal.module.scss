@@ -1,0 +1,28 @@
+@import '../../theme/theme.scss';
+
+.modalContainer {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 10;
+	background-color: #7b6874;
+	background-color: $backgroundLight;
+	border-radius: $largeRadius;
+
+	.modalContent {
+		display: flex;
+		padding: 80px 40px;
+		background-color: transparent;
+	}
+
+	.closeButton {
+		width: 25px;
+		height: 25px;
+		position: absolute;
+		top: 0;
+		right: 0;
+		cursor: pointer;
+		background-color: $call;
+	}
+}

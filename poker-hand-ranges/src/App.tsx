@@ -1,26 +1,19 @@
 import './App.scss';
 import React, { Component } from 'react';
-import HandRangeTemplate from './components/HandRangeTemplate/HandRangeTemplate';
 import { Provider } from 'mobx-react';
 import { MainStore } from './stores/MainStore';
-import HandRangeConfig from './components/HandRangeConfig/HandRangeConfig';
 import PositionFilter from './components/PositionFilter/PositionFilter';
+import StrategiesPage from './components/StrategiesPage/StrategiesPage';
 
-interface IAppProps {
-	MainStore?: MainStore;
-}
-
-export default class App extends Component<IAppProps> {
+export default class App extends Component {
 	private stores = { MainStore: new MainStore() };
 
 	render() {
 		return (
 			<Provider {...this.stores}>
 				<div className="App">
-					<HandRangeTemplate />
-					<HandRangeConfig />
+					<StrategiesPage />
 					<PositionFilter />
-					<button className="newTableButton">New hand range</button>
 				</div>
 			</Provider>
 		);

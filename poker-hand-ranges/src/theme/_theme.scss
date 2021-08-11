@@ -13,10 +13,11 @@ $background: #414141;
 // $background: #616161;
 
 //! ezzel a színnel lehet játszani background-nak
-// rgb(189, 189, 189)
-// rgb(214, 214, 214)
-// rgb(151, 151, 151)
-// rgb(110, 110, 110)
+// #BDBDBD
+// #D6D6D6
+// #979797
+// #6E6E6E
+$backgroundLight: #6e6e6e;
 
 // Text colors
 $white: rgb(248, 248, 248);
@@ -39,6 +40,7 @@ $_3bet: #fff;
 $_4bet: #fff;
 
 $fold: #7b6874; // new color
+$fold: #737273; // new color
 $silver: #737273;
 
 //* Main colors

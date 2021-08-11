@@ -18,7 +18,8 @@
 }
 
 .handRangeTable {
-	box-shadow: $smoothShadow;
+	box-shadow: $shortShadow;
+	box-shadow: $dreamySoftShadow;
 	height: 100%;
 	// box-shadow: 0 20px 40px 10px rgba($color: #1d1d1d, $alpha: 0.3);
 
@@ -29,15 +30,11 @@
 
 		.cardCell {
 			@include centering;
-
 			font-size: 12px;
-			// padding: 22px;
 			padding: $cellPadding;
 			width: $cellWidth;
 			height: $cellHeight;
 			cursor: cell;
-			// color: $background;
-			color: rgb(226, 226, 226);
 
 			&:hover {
 				// opacity: 0.8;
