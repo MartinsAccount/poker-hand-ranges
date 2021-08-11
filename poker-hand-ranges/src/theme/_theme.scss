@@ -1,18 +1,36 @@
-// Colors
-// $background: #f5f3f4;
-// $background: #393a3e;
-$background: #333333;
-// $background: #212429;
+//* Font
+$fontFamily: 'Rubik', sans-serif;
 
-$white: #fff;
+//* Backgrounds
+// $background: #f5f3f4;
+$background: #393a3e;
+$backgroundLight: #212121;
+$backgroundDark: #121212;
+// $background: #212429;
+$background: #414141;
+// $background: #7b6874;
+// $background: #2a2c25;
+// $background: #616161;
+
+//! ezzel a színnel lehet játszani background-nak
+// rgb(189, 189, 189)
+// rgb(214, 214, 214)
+// rgb(151, 151, 151)
+// rgb(110, 110, 110)
+
+// Text colors
+$white: rgb(248, 248, 248);
 // $primary: #ba181b;
 $primary: #1bbd5c;
 $primaryHover: #660708;
 $dark: #161a1d;
 $black: #0b090a;
 
-// actions
+//* Action colors
 $fold: #0f4c5c;
+$fold: #829ab1;
+$fold: #c0c0c0;
+$fold: #b0b0b0;
 $allin: #9a031e;
 $raise: #e36414;
 $call: #fb8b24;
@@ -20,7 +38,20 @@ $limp: #5f0f40;
 $_3bet: #fff;
 $_4bet: #fff;
 
-// others
+$fold: #7b6874; // new color
+$silver: #737273;
+
+//* Main colors
+$purple: #8b54ff;
+$purpleMid: #c192fc;
+$purpleLight: #c3b3e7;
+
+//* Border radius
+$smallRadius: 4px;
+$midRadius: 8px;
+$largeRadius: 12px;
+
+//* Others
 $neumorph: 8px 8px 19px $background, -8px -8px 19px $background;
 
 // Box shadows
@@ -31,14 +62,23 @@ $dreamySoftShadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07),
 $shortShadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11), 0 4px 4px rgba(0, 0, 0, 0.11),
 	0 6px 8px rgba(0, 0, 0, 0.11), 0 8px 16px rgba(0, 0, 0, 0.11);
 
-// table
+//* Table
 $cellWidth: 10px;
 $cellHeight: 10px;
 $cellPadding: 18px;
 
-// mixins
+//* Mixins
 @mixin centering {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+@mixin defaultButton {
+	@include centering;
+	border-radius: $midRadius;
+	padding: 16px;
+	cursor: pointer;
+	outline: none;
+	border: none;
 }

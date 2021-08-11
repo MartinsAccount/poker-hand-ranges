@@ -13,26 +13,16 @@ interface IAppProps {
 export default class App extends Component<IAppProps> {
 	private stores = { MainStore: new MainStore() };
 
-	// stores = null;
-	// constructor(props) {
-	//   super(props);
-
-	//   this.stores = { MainStore: new MainStore() };
-	// }
-
 	render() {
-		// const stores = { MainStore: new MainStore() };
-
 		return (
 			<Provider {...this.stores}>
 				<div className="App">
 					<HandRangeTemplate />
 					<HandRangeConfig />
 					<PositionFilter />
+					<button className="newTableButton">New hand range</button>
 				</div>
 			</Provider>
 		);
 	}
 }
-
-// export default App;

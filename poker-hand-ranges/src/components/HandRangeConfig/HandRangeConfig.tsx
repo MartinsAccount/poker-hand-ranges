@@ -16,31 +16,43 @@ export default class HandRangeConfig extends Component<IHandRangeConfigProps> {
 		const { MainStore } = this.props;
 
 		return (
-			<div>
-				{ACTIONS.map((action: Actions) => (
-					<button className={styles.radioButton} onClick={() => MainStore!.selectAction(action)}>
-						{action}
-					</button>
-				))}
-
-				{STACKS.map((stack: Stacks) => (
-					<button className={styles.radioButton}>{stack}</button>
-				))}
-
-				<div onClick={() => MainStore.togglePositions('hero')}>
-					<div>{MainStore.heroParams.position?.toUpperCase() || 'pos'}</div>
-					{MainStore.isOpenPositions.hero &&
-						POSITIONS.map((pos: Positions) => (
-							<div onClick={() => MainStore.changePositions(pos, 'hero')}>{pos.toUpperCase()}</div>
-						))}
+			<div className={styles.configContainer}>
+				<div className={styles.actionsContainer}>
+					{ACTIONS.map((action: Actions) => (
+						<button className={styles.radioButton} onClick={() => MainStore!.selectAction(action)}>
+							{action}
+						</button>
+					))}
 				</div>
 
-				<div onClick={() => MainStore.togglePositions('villain')}>
-					<div>{MainStore.villainParams.position?.toUpperCase() || 'pos'}</div>
-					{MainStore.isOpenPositions.villain &&
-						POSITIONS.map((pos: Positions) => (
-							<div onClick={() => MainStore.changePositions(pos, 'villain')}>{pos.toUpperCase()}</div>
-						))}
+				<div className={styles.stacksContainer}>
+					{STACKS.map((stack: Stacks) => (
+						<button className={styles.radioButton}>{stack}</button>
+					))}
+				</div>
+
+				<div className={styles.positionsContainer}>
+					<div className={styles.dropDown} onClick={() => MainStore.togglePositions('hero')}>
+						<div className={styles.dropDownBlock}>{MainStore.heroParams.position?.toUpperCase() || 'Select hero position'}</div>
+						<div className={styles.dropDownContent}>
+							{MainStore.isOpenPositions.hero &&
+								POSITIONS.map((pos: Positions) => (
+									<div onClick={() => MainStore.changePositions(pos, 'hero')}>{pos.toUpperCase()}</div>
+								))}
+						</div>
+					</div>
+					<p>vs</p>
+					<div className={styles.dropDown} onClick={() => MainStore.togglePositions('villain')}>
+						<div className={styles.dropDownBlock}>
+							{MainStore.villainParams.position?.toUpperCase() || 'Select villain position'}
+						</div>
+						<div className={styles.dropDownContent}>
+							{MainStore.isOpenPositions.villain &&
+								POSITIONS.map((pos: Positions) => (
+									<div onClick={() => MainStore.changePositions(pos, 'villain')}>{pos.toUpperCase()}</div>
+								))}
+						</div>
+					</div>
 				</div>
 
 				{/* <ActionRadioButton action="fold" />
