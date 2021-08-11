@@ -1,20 +1,88 @@
 @import '../../theme/theme.scss';
 
-.radioButton {
-	@include centering;
-	padding: 12px 20px;
-	border-radius: 12px;
-	font-size: 18px;
-	height: 80px;
-	width: 80px;
-	border-radius: 50px;
-	cursor: pointer;
-	outline: none;
-	border: none;
-	color: $white;
-	background-color: $primary;
+.configContainer {
+	display: flex;
+	flex-direction: column;
+	margin-left: 50px;
+	gap: 25px;
 
-	&:hover {
-		background-color: $primaryHover;
+	.actionsContainer {
+		display: flex;
+		gap: 8px;
+
+		.radioButton {
+			@include centering;
+			padding: 12px 20px;
+			border-radius: 12px;
+			font-size: 16px;
+			height: 50px;
+			width: 50px;
+			border-radius: 50px;
+			cursor: pointer;
+			outline: none;
+			border: none;
+			background-color: $purpleMid;
+
+			&:hover {
+				background-color: $purple;
+			}
+		}
+	}
+
+	.stacksContainer {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+
+		.radioButton {
+			@include centering;
+			padding: 10px;
+			border-radius: 50px;
+			font-size: 16px;
+			cursor: pointer;
+			outline: none;
+			border: none;
+			background-color: $purpleMid;
+
+			&:hover {
+				background-color: $purple;
+			}
+		}
+	}
+
+	.positionsContainer {
+		display: flex;
+		gap: 8px;
+
+		.dropDown {
+			display: flex;
+			flex-direction: column;
+
+			.dropDownContent {
+				border-radius: 0 0 $midRadius $midRadius;
+				overflow: hidden;
+
+				div {
+					cursor: pointer;
+					background-color: $purpleLight;
+
+					&:hover {
+						background-color: $purpleMid;
+					}
+				}
+			}
+			.dropDownBlock {
+				width: 200px;
+				padding: 12px 20px;
+				cursor: pointer;
+				border: 1px solid $purple;
+				border-radius: $midRadius;
+				background-color: $purpleMid;
+
+				&:hover {
+					background-color: $purple;
+				}
+			}
+		}
 	}
 }

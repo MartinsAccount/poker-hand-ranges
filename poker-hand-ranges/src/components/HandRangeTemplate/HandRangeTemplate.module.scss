@@ -2,6 +2,7 @@
 
 [data-action='fold'] {
 	background-color: $fold;
+	opacity: 0.8;
 }
 [data-action='limp'] {
 	background-color: $limp;
@@ -19,6 +20,7 @@
 .handRangeTable {
 	box-shadow: $smoothShadow;
 	height: 100%;
+	// box-shadow: 0 20px 40px 10px rgba($color: #1d1d1d, $alpha: 0.3);
 
 	.row {
 		display: flex;
