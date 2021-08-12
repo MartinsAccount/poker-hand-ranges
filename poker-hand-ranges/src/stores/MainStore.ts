@@ -32,21 +32,30 @@ export class MainStore {
 				if (index === round) {
 					return handRangeRow.push({
 						hand: `${card}${card}`,
-						action: null
+						action: null,
+						isMultiActions: false,
+						multiActions: []
 					});
 				}
 				// offsuit
 				if (index < round) {
 					return handRangeRow.push({
 						hand: `${card}${CARDS[round]}o`,
-						action: null
+						action: null,
+						isMultiActions: true,
+						multiActions: [
+							{ action: 'call', percent: 50 },
+							{ action: 'allin', percent: 20 }
+						]
 					});
 				}
 				// suit
 				if (index > round) {
 					return handRangeRow.push({
 						hand: `${CARDS[round]}${card}s`,
-						action: null
+						action: null,
+						isMultiActions: false,
+						multiActions: []
 					});
 				}
 			});

@@ -36,11 +36,28 @@
 
 		.cardCell {
 			@include centering;
-			font-size: 12px;
-			padding: $cellPadding;
+			font-size: 1.2rem;
+			// padding: $cellPadding;
 			width: $cellWidth;
 			height: $cellHeight;
 			cursor: cell;
+			position: relative;
+			justify-content: flex-start;
+
+			.hand {
+				font-size: 1.2rem;
+				display: inline-block;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				z-index: 5;
+			}
+
+			.multiActions {
+				display: inline-flex;
+				justify-self: flex-start;
+			}
 
 			&:hover {
 				// opacity: 0.8;
