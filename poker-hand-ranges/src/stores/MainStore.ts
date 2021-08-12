@@ -50,7 +50,9 @@ export class MainStore {
 					});
 				}
 			});
-
+			// setTimeout(() => {
+			// 	this.handRange.push(handRangeRow);
+			// }, i * 30);
 			_handRange.push(handRangeRow);
 		}
 		this.handRange = _handRange;

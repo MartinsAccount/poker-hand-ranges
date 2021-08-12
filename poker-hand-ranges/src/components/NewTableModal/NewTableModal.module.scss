@@ -9,10 +9,23 @@
 	background-color: #7b6874;
 	background-color: $backgroundLight;
 	border-radius: $largeRadius;
+	box-shadow: $dreamySoftShadow;
+	animation: appaering 500ms ease-in-out;
 
 	.modalContent {
 		display: flex;
 		padding: 100px 40px;
 		background-color: transparent;
+	}
+}
+
+@keyframes appaering {
+	0% {
+		opacity: 0;
+		transform: scale(0.2) translate(-50%, -50%);
+	}
+	100% {
+		opacity: 1;
+		transform: scale(1) translate(-50%, -50%);
 	}
 }

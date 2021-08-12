@@ -37,6 +37,23 @@ export default class HandRangeTemplate extends Component<IHandRangeTemplateProps
 						))}
 					</div>
 				))}
+				{/* {MainStore!.handRange.map((row: Hand[], index) => (
+					<div key={index} className={styles.row}>
+						{row.map((cell: Hand) => (
+							<div
+								key={cell.hand}
+								className={styles.cardCell}
+								data-action={cell.action}
+								onMouseDown={(e) => MainStore!.isMouseDownToggle(e)}
+								onMouseUp={(e) => MainStore!.isMouseDownToggle(e)}
+								onMouseMove={() => MainStore!.changeHandRange(cell)}
+								onClick={() => MainStore!.changeHandRange(cell, true)}
+							>
+								{cell.hand}
+							</div>
+						))}
+					</div>
+				))} */}
 			</div>
 		);
 	}

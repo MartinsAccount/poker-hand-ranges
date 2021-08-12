@@ -1,7 +1,7 @@
 import { inject, observer } from 'mobx-react';
 import React, { Component } from 'react';
 import { MainStore } from '../../stores/MainStore';
-import NavBar from '../NavBar/NavBar';
+import styles from './HomePage.module.scss';
 
 interface IStrategiesPageProps {
 	MainStore?: MainStore;
@@ -13,6 +13,13 @@ export default class StrategiesPage extends Component<IStrategiesPageProps> {
 	render() {
 		const { MainStore } = this.props;
 
-		return <div></div>;
+		return (
+			<>
+				<section className={styles.landing}></section>
+				<section className={styles.section3}></section>
+				<section className={styles.section1}></section>
+				<section className={styles.section2}></section>
+			</>
+		);
 	}
 }
