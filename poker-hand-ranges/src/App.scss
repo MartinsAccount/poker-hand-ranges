@@ -16,9 +16,9 @@ html {
 
 .App {
 	text-align: center;
-	@include centering;
+	// @include centering;
 	background-color: $background;
-	padding: 50px 300px;
+	// padding: 50px 300px;
 	min-height: 100vh;
 	// background-image: url('./assets/background.jpg');
 	// background-repeat: no-repeat;

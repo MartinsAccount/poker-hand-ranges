@@ -5,6 +5,7 @@ export type Actions = 'fold' | 'limp' | 'allin' | 'raise' | 'call' | '3-bet' | '
 export type Strategies = 'PFI' | 'Defense' | 'Push-Fold';
 export type Stacks = 10 | 12 | 15 | 20 | 25 | 30 | 40 | 60;
 export type Stages = 'preflop' | 'flop' | 'turn' | 'river';
+export type Players = 'hero' | 'villain';
 type BetSizes = 2 | 2.2 | 2.5 | 3;
 
 export interface Hand {

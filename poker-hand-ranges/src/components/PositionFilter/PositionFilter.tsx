@@ -20,8 +20,9 @@ export default class PositionFilter extends Component<IPositionFilterProps> {
 				<div className={`${styles.positionsContainer} ${styles.heroPositions}`}>
 					{POSITIONS.map((pos: Positions) => (
 						<div
-							className={`${styles.positionButton} ${MainStore.positionFilter.hero === pos && styles.activeButton}`}
-							onClick={() => MainStore.positionFiltering(pos, 'hero')}
+							className={`${styles.positionButton} ${MainStore.positionFilter.hero === pos && styles.activeButton} 
+							${MainStore.positionFilter.villain === pos && styles.disabled}`}
+							onClick={() => MainStore.positionFilter.villain !== pos && MainStore.positionFiltering(pos, 'hero')}
 						>
 							{pos.toUpperCase()}
 						</div>
@@ -30,8 +31,9 @@ export default class PositionFilter extends Component<IPositionFilterProps> {
 				<div className={`${styles.positionsContainer} ${styles.villainPositions}`}>
 					{POSITIONS.map((pos: Positions) => (
 						<div
-							className={`${styles.positionButton} ${MainStore.positionFilter.villain === pos && styles.activeButton}`}
-							onClick={() => MainStore.positionFiltering(pos, 'villain')}
+							className={`${styles.positionButton} ${MainStore.positionFilter.hero === pos && styles.disabled}
+							 ${MainStore.positionFilter.villain === pos && styles.activeButton}`}
+							onClick={() => MainStore.positionFilter.hero !== pos && MainStore.positionFiltering(pos, 'villain')}
 						>
 							{pos.toUpperCase()}
 						</div>

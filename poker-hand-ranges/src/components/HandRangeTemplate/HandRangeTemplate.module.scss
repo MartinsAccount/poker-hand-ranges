@@ -16,6 +16,12 @@
 [data-action='raise'] {
 	background-color: $raise;
 }
+[data-action='3-bet'] {
+	background-color: $_3bet;
+}
+[data-action='4-bet'] {
+	background-color: $_4bet;
+}
 
 .handRangeTable {
 	box-shadow: $shortShadow;

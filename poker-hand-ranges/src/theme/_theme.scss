@@ -2,46 +2,35 @@
 $fontFamily: 'Rubik', sans-serif;
 
 //* Backgrounds
-// $background: #f5f3f4;
-$background: #393a3e;
-$backgroundLight: #212121;
-$backgroundDark: #121212;
-// $background: #212429;
+// $background: #393a3e;
+$backgroundDark: #212121;
+$backgroundLight: #6e6e6e;
+$backgroundLighter: #d6d6d6; // #979797
 $background: #414141;
-// $background: #7b6874;
-// $background: #2a2c25;
-// $background: #616161;
 
 //! ezzel a színnel lehet játszani background-nak
-// #BDBDBD
-// #D6D6D6
-// #979797
-// #6E6E6E
-$backgroundLight: #6e6e6e;
+$section: #7b6874;
+// $section: #212429; // jó szín feketés kékes
+// $section: #2a2c25; // jó szín feketés zöldes
 
-// Text colors
-$white: rgb(248, 248, 248);
-// $primary: #ba181b;
-$primary: #1bbd5c;
-$primaryHover: #660708;
-$dark: #161a1d;
+//* Text colors
+$white: #f8f8f8;
 $black: #0b090a;
 
+// $primary: #ba181b;
+$silver: #737273;
+
+$primary: #1bbd5c;
+$primaryHover: #660708;
+
 //* Action colors
-$fold: #0f4c5c;
-$fold: #829ab1;
-$fold: #c0c0c0;
-$fold: #b0b0b0;
+$fold: $silver;
 $allin: #9a031e;
 $raise: #e36414;
 $call: #fb8b24;
 $limp: #5f0f40;
-$_3bet: #fff;
-$_4bet: #fff;
-
-$fold: #7b6874; // new color
-$fold: #737273; // new color
-$silver: #737273;
+$_3bet: #0f4c5c;
+$_4bet: #7b6874;
 
 //* Main colors
 $purple: #8b54ff;
@@ -56,7 +45,7 @@ $largeRadius: 12px;
 //* Others
 $neumorph: 8px 8px 19px $background, -8px -8px 19px $background;
 
-// Box shadows
+//* Box shadows
 $smoothShadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.12),
 	0 8px 8px rgba(0, 0, 0, 0.12), 0 16px 16px rgba(0, 0, 0, 0.12);
 $dreamySoftShadow: 0 1px 2px rgba(0, 0, 0, 0.07), 0 2px 4px rgba(0, 0, 0, 0.07), 0 4px 8px rgba(0, 0, 0, 0.07),

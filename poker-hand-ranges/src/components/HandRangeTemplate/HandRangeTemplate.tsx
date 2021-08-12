@@ -30,7 +30,7 @@ export default class HandRangeTemplate extends Component<IHandRangeTemplateProps
 								onMouseDown={(e) => MainStore!.isMouseDownToggle(e)}
 								onMouseUp={(e) => MainStore!.isMouseDownToggle(e)}
 								onMouseMove={() => MainStore!.changeHandRange(cell)}
-								onClick={() => MainStore!.changeHandRange(cell)}
+								onClick={() => MainStore!.changeHandRange(cell, true)}
 							>
 								{cell.hand}
 							</div>

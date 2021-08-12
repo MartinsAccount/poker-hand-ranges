@@ -20,7 +20,6 @@ export default class NewTableModal extends Component<IPositionFilterProps> {
 				<div className={styles.modalContent}>
 					<HandRangeTemplate />
 					<HandRangeConfig />
-					<div onClick={() => MainStore.toggleModal()} className={styles.closeButton}></div>
 				</div>
 			</div>
 		);

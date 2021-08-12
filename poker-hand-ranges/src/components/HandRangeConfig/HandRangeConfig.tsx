@@ -3,7 +3,7 @@ import { inject, observer } from 'mobx-react';
 import { MainStore } from '../../stores/MainStore';
 import styles from './HandRangeConfig.module.scss';
 import { Actions, Positions, Stacks } from '../../models/models';
-import { ACTIONS, POSITIONS, STACKS } from '../../models/constants';
+import { ACTIONS, GROUPS_SELECT, POSITIONS, STACKS } from '../../models/constants';
 
 interface IHandRangeConfigProps {
 	MainStore?: MainStore;
@@ -19,7 +19,10 @@ export default class HandRangeConfig extends Component<IHandRangeConfigProps> {
 			<div className={styles.configContainer}>
 				<div className={styles.actionsContainer}>
 					{ACTIONS.map((action: Actions) => (
-						<button className={styles.radioButton} onClick={() => MainStore!.selectAction(action)}>
+						<button
+							className={`${styles.radioButton}  ${MainStore.selectedAction === action && styles.activeButton}`}
+							onClick={() => MainStore!.selectAction(action)}
+						>
 							{action}
 						</button>
 					))}
@@ -55,7 +58,39 @@ export default class HandRangeConfig extends Component<IHandRangeConfigProps> {
 					</div>
 				</div>
 
-				<button onClick={() => MainStore.saveNewTable()}>Save</button>
+				<div className={styles.inputsContainer}>
+					<div className={styles.titleContainer}>
+						<label htmlFor="title">Title</label>
+						<input
+							onChange={(e) => MainStore.changeTableTitle(e.target.value)}
+							type="text"
+							id="title"
+							placeholder="Give title to this hand range table"
+						/>
+					</div>
+					<label htmlFor="description">Description</label>
+					<textarea
+						onChange={(e) => MainStore.changeTableDescription(e.target.value)}
+						name="description"
+						id="description"
+						rows={6}
+						cols={35}
+					></textarea>
+				</div>
+
+				<button className={styles.save} onClick={() => MainStore.saveNewTable()}>
+					Save
+				</button>
+
+				<div onClick={() => MainStore.toggleModal()} className={styles.close}></div>
+
+				<div className={styles.groupsContainer}>
+					{GROUPS_SELECT.map((group: string) => (
+						<button onClick={() => MainStore.selectGroup(group)} className={styles.groupsButton}>
+							{group}
+						</button>
+					))}
+				</div>
 
 				{/* <ActionRadioButton action="fold" />
 				<ActionRadioButton action="limp" />

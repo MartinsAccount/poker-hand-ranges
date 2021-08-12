@@ -12,17 +12,7 @@
 
 	.modalContent {
 		display: flex;
-		padding: 80px 40px;
+		padding: 100px 40px;
 		background-color: transparent;
-	}
-
-	.closeButton {
-		width: 25px;
-		height: 25px;
-		position: absolute;
-		top: 0;
-		right: 0;
-		cursor: pointer;
-		background-color: $call;
 	}
 }

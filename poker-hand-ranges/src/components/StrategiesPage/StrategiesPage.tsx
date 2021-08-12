@@ -2,6 +2,7 @@ import { inject, observer } from 'mobx-react';
 import React, { Component } from 'react';
 import { MainStore } from '../../stores/MainStore';
 import NewTableModal from '../NewTableModal/NewTableModal';
+import PositionFilter from '../PositionFilter/PositionFilter';
 
 interface IStrategiesPageProps {
 	MainStore?: MainStore;
@@ -19,6 +20,7 @@ export default class StrategiesPage extends Component<IStrategiesPageProps> {
 				<button onClick={() => MainStore.toggleModal()} className="newTableButton">
 					New hand range
 				</button>
+				<PositionFilter />
 			</div>
 		);
 	}

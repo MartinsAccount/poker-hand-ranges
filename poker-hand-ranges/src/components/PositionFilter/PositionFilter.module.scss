@@ -33,6 +33,10 @@
 		background-color: $primaryHover;
 		box-shadow: inset 4px 4px 16px #1a1d21, inset -4px -4px 16px #282b31;
 	}
+	.disabled {
+		cursor: not-allowed;
+		opacity: 0.5;
+	}
 }
 
 .heroPositions {
