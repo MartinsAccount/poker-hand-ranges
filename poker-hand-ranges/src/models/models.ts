@@ -22,6 +22,7 @@ export interface Hand {
 	action: Actions; //TODO: felosztani több action-t egy hand-re
 	isMultiActions: boolean;
 	multiActions: MultiAction[];
+	combos: 4 | 12 | 6;
 	// combos: number;
 }
 

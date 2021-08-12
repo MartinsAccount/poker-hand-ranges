@@ -34,7 +34,8 @@ export class MainStore {
 						hand: `${card}${card}`,
 						action: null,
 						isMultiActions: false,
-						multiActions: []
+						multiActions: [],
+						combos: 6
 					});
 				}
 				// offsuit
@@ -46,7 +47,8 @@ export class MainStore {
 						multiActions: [
 							{ action: 'call', percent: 50 },
 							{ action: 'allin', percent: 20 }
-						]
+						],
+						combos: 12
 					});
 				}
 				// suit
@@ -55,7 +57,8 @@ export class MainStore {
 						hand: `${CARDS[round]}${card}s`,
 						action: null,
 						isMultiActions: false,
-						multiActions: []
+						multiActions: [],
+						combos: 6
 					});
 				}
 			});
