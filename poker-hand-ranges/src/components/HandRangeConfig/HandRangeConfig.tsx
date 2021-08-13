@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { inject, observer } from 'mobx-react';
 import { MainStore } from '../../stores/MainStore';
 import styles from './HandRangeConfig.module.scss';
-import { Actions, Positions, Stacks } from '../../models/models';
-import { ACTIONS, GROUPS_SELECT, POSITIONS, STACKS } from '../../models/constants';
+import { Actions, Groups, Positions, Stacks, Strategies } from '../../models/models';
+import { ACTIONS, GROUPS_SELECT, POSITIONS, STACKS, STRATEGIES } from '../../models/constants';
 
 interface IHandRangeConfigProps {
 	MainStore?: MainStore;
@@ -28,6 +28,16 @@ export default class HandRangeConfig extends Component<IHandRangeConfigProps> {
 					))}
 				</div>
 
+				<div className={styles.customActionsContainer}></div>
+
+				<div className={styles.strategiesContainer}>
+					{STRATEGIES.map((strategy: Strategies) => (
+						<button onClick={(e) => MainStore.configureHandRangeProperties('strategy', strategy)} className={styles.radioButton}>
+							{strategy}
+						</button>
+					))}
+				</div>
+
 				<div className={styles.stacksContainer}>
 					{STACKS.map((stack: Stacks) => (
 						<button className={styles.radioButton}>{stack}</button>
@@ -36,23 +46,25 @@ export default class HandRangeConfig extends Component<IHandRangeConfigProps> {
 
 				<div className={styles.positionsContainer}>
 					<div className={styles.dropDown} onClick={() => MainStore.togglePositions('hero')}>
-						<div className={styles.dropDownBlock}>{MainStore.heroParams.position?.toUpperCase() || 'Select hero position'}</div>
+						<div className={styles.dropDownBlock}>
+							{MainStore.handRangeStrategy.hero.position?.toUpperCase() || 'Select hero position'}
+						</div>
 						<div className={styles.dropDownContent}>
 							{MainStore.isOpenPositions.hero &&
 								POSITIONS.map((pos: Positions) => (
-									<div onClick={() => MainStore.changePositions(pos, 'hero')}>{pos.toUpperCase()}</div>
+									<div onClick={() => MainStore.configureHandRangeProperties('hero', pos)}>{pos.toUpperCase()}</div>
 								))}
 						</div>
 					</div>
 					<p>vs</p>
 					<div className={styles.dropDown} onClick={() => MainStore.togglePositions('villain')}>
 						<div className={styles.dropDownBlock}>
-							{MainStore.villainParams.position?.toUpperCase() || 'Select villain position'}
+							{MainStore.handRangeStrategy.villain.position?.toUpperCase() || 'Select villain position'}
 						</div>
 						<div className={styles.dropDownContent}>
 							{MainStore.isOpenPositions.villain &&
 								POSITIONS.map((pos: Positions) => (
-									<div onClick={() => MainStore.changePositions(pos, 'villain')}>{pos.toUpperCase()}</div>
+									<div onClick={() => MainStore.configureHandRangeProperties('villain', pos)}>{pos.toUpperCase()}</div>
 								))}
 						</div>
 					</div>
@@ -62,7 +74,7 @@ export default class HandRangeConfig extends Component<IHandRangeConfigProps> {
 					<div className={styles.titleContainer}>
 						<label htmlFor="title">Title</label>
 						<input
-							onChange={(e) => MainStore.changeTableTitle(e.target.value)}
+							onChange={(e) => MainStore.configureHandRangeProperties('title', e.target.value)}
 							type="text"
 							id="title"
 							placeholder="Give title to this hand range table"
@@ -70,7 +82,7 @@ export default class HandRangeConfig extends Component<IHandRangeConfigProps> {
 					</div>
 					<label htmlFor="description">Description</label>
 					<textarea
-						onChange={(e) => MainStore.changeTableDescription(e.target.value)}
+						onChange={(e) => MainStore.configureHandRangeProperties('description', e.target.value)}
 						name="description"
 						id="description"
 						rows={6}
@@ -85,7 +97,7 @@ export default class HandRangeConfig extends Component<IHandRangeConfigProps> {
 				<div onClick={() => MainStore.toggleModal()} className={styles.close}></div>
 
 				<div className={styles.groupsContainer}>
-					{GROUPS_SELECT.map((group: string) => (
+					{GROUPS_SELECT.map((group: Groups) => (
 						<button onClick={() => MainStore.selectGroup(group)} className={styles.groupsButton}>
 							{group}
 						</button>

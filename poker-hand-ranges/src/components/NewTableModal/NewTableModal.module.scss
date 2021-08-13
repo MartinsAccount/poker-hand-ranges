@@ -1,6 +1,7 @@
 @import '../../theme/theme.scss';
 
 .modalContainer {
+	height: 90vh;
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -15,6 +16,9 @@
 	.modalContent {
 		display: flex;
 		padding: 100px 40px;
+		align-items: center;
+		// justify-content: center;
+		height: 100%;
 		background-color: transparent;
 	}
 }

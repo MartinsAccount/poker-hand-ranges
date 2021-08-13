@@ -1,0 +1,2729 @@
+[
+	{
+		"id": 0,
+		"title": "teszt1",
+		"description": "",
+		"stage": "preflop",
+		"strategy": "PFI",
+		"hero": { "position": "utg2", "action": null },
+		"villain": { "position": "lj", "action": null },
+		"stack": null,
+		"hands": [
+			[
+				{ "hand": "AA", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "AKs", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "AQs", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "AJs", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "ATs", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "A9s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "A8s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "A7s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "A6s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "A5s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "A4s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "A3s", "action": null, "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "A2s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 }
+			],
+			[
+				{
+					"hand": "AKo",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{ "hand": "KK", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "KQs", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "KJs", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "KTs", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "K9s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "K8s", "action": null, "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "K7s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "K6s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "K5s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "K4s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "K3s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "K2s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 }
+			],
+			[
+				{
+					"hand": "AQo",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "KQo",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{ "hand": "QQ", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "QJs", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "QTs", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "Q9s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "Q8s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "Q7s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "Q6s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "Q5s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "Q4s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "Q3s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "Q2s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 }
+			],
+			[
+				{
+					"hand": "AJo",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "KJo",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "QJo",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{ "hand": "JJ", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "JTs", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "J9s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "J8s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "J7s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "J6s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "J5s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "J4s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "J3s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "J2s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 }
+			],
+			[
+				{
+					"hand": "ATo",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "KTo",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "QTo",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "JTo",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{ "hand": "TT", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "T9s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "T8s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "T7s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "T6s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "T5s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "T4s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "T3s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "T2s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 }
+			],
+			[
+				{
+					"hand": "A9o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "K9o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "Q9o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "J9o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "T9o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{ "hand": "99", "action": null, "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "98s", "action": null, "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "97s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "96s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "95s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "94s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "93s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "92s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 }
+			],
+			[
+				{
+					"hand": "A8o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "K8o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "Q8o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "J8o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "T8o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "98o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{ "hand": "88", "action": null, "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "87s", "action": null, "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "86s", "action": null, "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "85s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "84s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "83s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "82s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 }
+			],
+			[
+				{
+					"hand": "A7o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "K7o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "Q7o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "J7o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "T7o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "97o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "87o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{ "hand": "77", "action": null, "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "76s", "action": null, "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "75s", "action": null, "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "74s", "action": null, "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "73s", "action": null, "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "72s", "action": null, "isMultiActions": false, "multiActions": [], "combos": 6 }
+			],
+			[
+				{
+					"hand": "A6o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "K6o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "Q6o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "J6o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "T6o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "96o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "86o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "76o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{ "hand": "66", "action": null, "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "65s", "action": null, "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "64s", "action": null, "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "63s", "action": null, "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "62s", "action": null, "isMultiActions": false, "multiActions": [], "combos": 6 }
+			],
+			[
+				{
+					"hand": "A5o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "K5o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "Q5o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "J5o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "T5o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "95o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "85o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "75o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "65o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{ "hand": "55", "action": null, "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "54s", "action": null, "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "53s", "action": null, "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "52s", "action": null, "isMultiActions": false, "multiActions": [], "combos": 6 }
+			],
+			[
+				{
+					"hand": "A4o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "K4o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "Q4o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "J4o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "T4o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "94o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "84o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "74o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "64o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "54o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{ "hand": "44", "action": null, "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "43s", "action": null, "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "42s", "action": null, "isMultiActions": false, "multiActions": [], "combos": 6 }
+			],
+			[
+				{
+					"hand": "A3o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "K3o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "Q3o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "J3o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "T3o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "93o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "83o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "73o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "63o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "53o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "43o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{ "hand": "33", "action": null, "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "32s", "action": null, "isMultiActions": false, "multiActions": [], "combos": 6 }
+			],
+			[
+				{
+					"hand": "A2o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "K2o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "Q2o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "J2o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "T2o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "92o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "82o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "72o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "62o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "52o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "42o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "32o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{ "hand": "22", "action": null, "isMultiActions": false, "multiActions": [], "combos": 6 }
+			]
+		]
+	},
+	{
+		"id": 0,
+		"title": "teszt2",
+		"description": "",
+		"stage": "preflop",
+		"strategy": "PFI",
+		"hero": { "position": "btn", "action": null },
+		"villain": { "position": "utg2", "action": null },
+		"stack": null,
+		"hands": [
+			[
+				{ "hand": "AA", "action": "call", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "AKs", "action": "call", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "AQs", "action": "call", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "AJs", "action": "call", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "ATs", "action": "call", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "A9s", "action": "3-bet", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "A8s", "action": "3-bet", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "A7s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "A6s", "action": "3-bet", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "A5s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "A4s", "action": "3-bet", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "A3s", "action": null, "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "A2s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 }
+			],
+			[
+				{
+					"hand": "AKo",
+					"action": "call",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{ "hand": "KK", "action": "call", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "KQs", "action": "call", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "KJs", "action": "call", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "KTs", "action": "call", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "K9s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "K8s", "action": "3-bet", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "K7s", "action": "3-bet", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "K6s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "K5s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "K4s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "K3s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "K2s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 }
+			],
+			[
+				{
+					"hand": "AQo",
+					"action": "call",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "KQo",
+					"action": "call",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{ "hand": "QQ", "action": "call", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "QJs", "action": "call", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "QTs", "action": "call", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "Q9s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "Q8s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "Q7s", "action": "3-bet", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "Q6s", "action": "3-bet", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "Q5s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "Q4s", "action": "3-bet", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "Q3s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "Q2s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 }
+			],
+			[
+				{
+					"hand": "AJo",
+					"action": "call",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "KJo",
+					"action": "call",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "QJo",
+					"action": "call",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{ "hand": "JJ", "action": "call", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "JTs", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "J9s", "action": "3-bet", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "J8s", "action": "3-bet", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "J7s", "action": "3-bet", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "J6s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "J5s", "action": "3-bet", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "J4s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "J3s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "J2s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 }
+			],
+			[
+				{
+					"hand": "ATo",
+					"action": "call",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "KTo",
+					"action": "call",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "QTo",
+					"action": "call",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "JTo",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{ "hand": "TT", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "T9s", "action": "3-bet", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "T8s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "T7s", "action": "3-bet", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "T6s", "action": "3-bet", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "T5s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "T4s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "T3s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "T2s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 }
+			],
+			[
+				{
+					"hand": "A9o",
+					"action": "call",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "K9o",
+					"action": "call",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "Q9o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "J9o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "T9o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{ "hand": "99", "action": "3-bet", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "98s", "action": "3-bet", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "97s", "action": "3-bet", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "96s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "95s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "94s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "93s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "92s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 }
+			],
+			[
+				{
+					"hand": "A8o",
+					"action": "call",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "K8o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "Q8o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "J8o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "T8o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "98o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{ "hand": "88", "action": null, "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "87s", "action": null, "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "86s", "action": null, "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "85s", "action": "4-bet", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "84s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "83s", "action": "limp", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "82s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 }
+			],
+			[
+				{
+					"hand": "A7o",
+					"action": "call",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "K7o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "Q7o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "J7o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "T7o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "97o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "87o",
+					"action": "limp",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{ "hand": "77", "action": "limp", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "76s", "action": "limp", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "75s", "action": "limp", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "74s", "action": "limp", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "73s", "action": "limp", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "72s", "action": null, "isMultiActions": false, "multiActions": [], "combos": 6 }
+			],
+			[
+				{
+					"hand": "A6o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "K6o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "Q6o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "J6o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "T6o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "96o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "86o",
+					"action": "limp",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "76o",
+					"action": "limp",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{ "hand": "66", "action": "limp", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "65s", "action": "limp", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "64s", "action": "limp", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "63s", "action": "limp", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "62s", "action": null, "isMultiActions": false, "multiActions": [], "combos": 6 }
+			],
+			[
+				{
+					"hand": "A5o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "K5o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "Q5o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "J5o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "T5o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "95o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "85o",
+					"action": "limp",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "75o",
+					"action": "limp",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "65o",
+					"action": "4-bet",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{ "hand": "55", "action": "limp", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "54s", "action": "limp", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "53s", "action": "limp", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "52s", "action": "4-bet", "isMultiActions": false, "multiActions": [], "combos": 6 }
+			],
+			[
+				{
+					"hand": "A4o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "K4o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "Q4o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "J4o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "T4o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "94o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "84o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "74o",
+					"action": "limp",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "64o",
+					"action": "limp",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "54o",
+					"action": "limp",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{ "hand": "44", "action": "limp", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "43s", "action": "limp", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "42s", "action": "4-bet", "isMultiActions": false, "multiActions": [], "combos": 6 }
+			],
+			[
+				{
+					"hand": "A3o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "K3o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "Q3o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "J3o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "T3o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "93o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "83o",
+					"action": "limp",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "73o",
+					"action": "limp",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "63o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "53o",
+					"action": "limp",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "43o",
+					"action": "limp",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{ "hand": "33", "action": "limp", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "32s", "action": "4-bet", "isMultiActions": false, "multiActions": [], "combos": 6 }
+			],
+			[
+				{
+					"hand": "A2o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "K2o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "Q2o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "J2o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "T2o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "92o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "82o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "72o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "62o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "52o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "42o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "32o",
+					"action": null,
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{ "hand": "22", "action": null, "isMultiActions": false, "multiActions": [], "combos": 6 }
+			]
+		]
+	},
+	{
+		"id": 0,
+		"title": "teszt3",
+		"description": "",
+		"stage": "preflop",
+		"strategy": "PFI",
+		"hero": { "position": "btn", "action": null },
+		"villain": { "position": "utg2", "action": null },
+		"stack": null,
+		"hands": [
+			[
+				{ "hand": "AA", "action": "fold", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "AKs", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "AQs", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "AJs", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "ATs", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "A9s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "A8s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "A7s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "A6s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "A5s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "A4s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "A3s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "A2s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 }
+			],
+			[
+				{
+					"hand": "AKo",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{ "hand": "KK", "action": "fold", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "KQs", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "KJs", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "KTs", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "K9s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "K8s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "K7s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "K6s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "K5s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "K4s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "K3s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "K2s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 }
+			],
+			[
+				{
+					"hand": "AQo",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "KQo",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{ "hand": "QQ", "action": "fold", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "QJs", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "QTs", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "Q9s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "Q8s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "Q7s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "Q6s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "Q5s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "Q4s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "Q3s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "Q2s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 }
+			],
+			[
+				{
+					"hand": "AJo",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "KJo",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "QJo",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{ "hand": "JJ", "action": "fold", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "JTs", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "J9s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "J8s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "J7s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "J6s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "J5s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "J4s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "J3s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "J2s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 }
+			],
+			[
+				{
+					"hand": "ATo",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "KTo",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "QTo",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "JTo",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{ "hand": "TT", "action": "fold", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "T9s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "T8s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "T7s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "T6s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "T5s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "T4s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "T3s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "T2s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 }
+			],
+			[
+				{
+					"hand": "A9o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "K9o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "Q9o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "J9o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "T9o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{ "hand": "99", "action": "fold", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "98s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "97s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "96s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "95s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "94s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "93s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "92s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 }
+			],
+			[
+				{
+					"hand": "A8o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "K8o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "Q8o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "J8o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "T8o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "98o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{ "hand": "88", "action": "fold", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "87s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "86s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "85s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "84s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "83s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "82s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 }
+			],
+			[
+				{
+					"hand": "A7o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "K7o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "Q7o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "J7o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "T7o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "97o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "87o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{ "hand": "77", "action": "fold", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "76s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "75s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "74s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "73s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "72s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 }
+			],
+			[
+				{
+					"hand": "A6o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "K6o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "Q6o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "J6o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "T6o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "96o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "86o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "76o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{ "hand": "66", "action": "fold", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "65s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "64s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "63s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "62s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 }
+			],
+			[
+				{
+					"hand": "A5o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "K5o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "Q5o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "J5o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "T5o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "95o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "85o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "75o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "65o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{ "hand": "55", "action": "fold", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "54s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "53s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "52s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 }
+			],
+			[
+				{
+					"hand": "A4o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "K4o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "Q4o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "J4o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "T4o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "94o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "84o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "74o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "64o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "54o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{ "hand": "44", "action": "fold", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "43s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "42s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 }
+			],
+			[
+				{
+					"hand": "A3o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "K3o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "Q3o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "J3o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "T3o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "93o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "83o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "73o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "63o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "53o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "43o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{ "hand": "33", "action": "fold", "isMultiActions": false, "multiActions": [], "combos": 6 },
+				{ "hand": "32s", "action": "allin", "isMultiActions": false, "multiActions": [], "combos": 6 }
+			],
+			[
+				{
+					"hand": "A2o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "K2o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "Q2o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "J2o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "T2o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "92o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "82o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "72o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "62o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "52o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "42o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{
+					"hand": "32o",
+					"action": "allin",
+					"isMultiActions": true,
+					"multiActions": [
+						{ "action": "call", "percent": 50 },
+						{ "action": "allin", "percent": 20 }
+					],
+					"combos": 12
+				},
+				{ "hand": "22", "action": "fold", "isMultiActions": false, "multiActions": [], "combos": 6 }
+			]
+		]
+	}
+]

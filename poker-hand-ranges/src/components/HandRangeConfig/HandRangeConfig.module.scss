@@ -70,6 +70,29 @@
 		}
 	}
 
+	.strategiesContainer {
+		display: flex;
+		gap: 8px;
+
+		.radioButton {
+			@include centering;
+			padding: 12px 20px;
+			border-radius: 12px;
+			font-size: 16px;
+			height: 40px;
+			// width: 50px;
+			// border-radius: 50px;
+			cursor: pointer;
+			outline: none;
+			border: none;
+			background-color: $purpleMid;
+
+			&:hover {
+				background-color: $purple;
+			}
+		}
+	}
+
 	.stacksContainer {
 		display: flex;
 		align-items: center;
