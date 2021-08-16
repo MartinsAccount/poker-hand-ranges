@@ -74,6 +74,11 @@ export class MainStore {
 				row.forEach((cell: Hand) => {
 					if (cell.hand === hand.hand) {
 						// console.log(toJS(cell));
+
+						if (click && cell.action !== null) {
+							cell.action = null;
+							return;
+						}
 						cell.action = this.selectedAction;
 					}
 				});

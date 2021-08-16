@@ -1,6 +1,6 @@
 import { inject, observer } from 'mobx-react';
 import React, { Component } from 'react';
-import { Hand, HandRange, MultiAction } from '../../models/models';
+import { HandRange } from '../../models/models';
 import { MainStore } from '../../stores/MainStore';
 import HandRangeTemplate from '../HandRangeTemplate/HandRangeTemplate';
 import NewTableModal from '../NewTableModal/NewTableModal';

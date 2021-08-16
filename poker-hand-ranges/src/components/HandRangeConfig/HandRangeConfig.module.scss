@@ -1,50 +1,36 @@
 @import '../../theme/theme.scss';
 
-.configContainer {
+.outerContainer {
 	display: flex;
 	flex-direction: column;
-	margin-left: 50px;
-	gap: 25px;
-	align-items: center;
 
-	.inputsContainer {
-		display: flex;
-		flex-direction: column;
-		gap: 10px;
+	.titleContainer {
+		width: 50%;
+		margin: 0 auto;
+		margin-bottom: 30px;
 
-		label {
-			font-size: 2rem;
-		}
-		.titleContainer {
-			width: 50%;
-			position: absolute;
-			top: 10px;
-			left: 50%;
-			transform: translateX(-50%);
-
-			input[type='text'] {
-				width: 100%;
-				border-radius: 50px;
-				font-size: 1.8rem;
-				padding: 1.2rem 1.8rem;
-				outline: none;
-				border: none;
-				color: $background;
-			}
-		}
-
-		textarea {
+		input[type='text'] {
+			width: 100%;
+			border-radius: 50px;
 			font-size: 1.8rem;
+			padding: 1.2rem 1.8rem;
 			outline: none;
 			border: none;
-			padding: 1.2rem 1.8rem;
 			color: $background;
-			border-radius: $largeRadius;
 		}
 	}
+}
+
+.configContainer {
+	display: flex;
+	flex-direction: row;
+	// margin-left: 50px;
+	gap: 25px;
 
 	.actionsContainer {
 		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
 		gap: 8px;
 
 		.radioButton {
@@ -70,85 +56,32 @@
 		}
 	}
 
-	.strategiesContainer {
+	.tableContainer {
 		display: flex;
-		gap: 8px;
+		flex-direction: column;
+		gap: 25px;
 
-		.radioButton {
-			@include centering;
-			padding: 12px 20px;
-			border-radius: 12px;
-			font-size: 16px;
-			height: 40px;
-			// width: 50px;
-			// border-radius: 50px;
-			cursor: pointer;
-			outline: none;
-			border: none;
-			background-color: $purpleMid;
-
-			&:hover {
-				background-color: $purple;
-			}
-		}
-	}
-
-	.stacksContainer {
-		display: flex;
-		align-items: center;
-		gap: 8px;
-
-		.radioButton {
-			@include centering;
-			padding: 10px;
-			border-radius: 50px;
-			font-size: 16px;
-			cursor: pointer;
-			outline: none;
-			border: none;
-			background-color: $purpleMid;
-
-			&:hover {
-				background-color: $purple;
-			}
-		}
-	}
-
-	// POSITIONS DROP DOWN
-
-	.positionsContainer {
-		display: flex;
-		gap: 8px;
-		align-items: center;
-
-		.dropDown {
+		.groupsContainer {
 			display: flex;
-			flex-direction: column;
-			position: relative;
+			justify-content: space-evenly;
+			align-items: center;
+			// position: absolute;
+			// left: 30px;
+			// bottom: 20px;
+			width: 100%;
 
-			.dropDownContent {
-				border-radius: 0 0 $midRadius $midRadius;
-				overflow: hidden;
-				position: absolute;
-				top: 45px;
-				left: 0;
-				width: 100%;
-
-				div {
-					cursor: pointer;
-					background-color: $purpleLight;
-
-					&:hover {
-						background-color: $purpleMid;
-					}
-				}
-			}
-			.dropDownBlock {
-				width: 200px;
-				padding: 12px 20px;
+			.groupsButton {
+				@include centering;
+				padding: 12px;
+				border-radius: 12px;
+				font-size: 16px;
+				height: 40px;
+				// width: 100%;
+				// width: 50px;
+				border-radius: 50px;
 				cursor: pointer;
-				border: 1px solid $purple;
-				border-radius: $midRadius;
+				outline: none;
+				border: none;
 				background-color: $purpleMid;
 
 				&:hover {
@@ -157,31 +90,139 @@
 			}
 		}
 	}
-	.groupsContainer {
-		display: flex;
-		justify-content: space-evenly;
-		align-items: center;
-		position: absolute;
-		left: 30px;
-		bottom: 20px;
-		width: 100%;
 
-		.groupsButton {
-			@include centering;
-			padding: 12px;
-			border-radius: 12px;
-			font-size: 16px;
-			height: 40px;
-			// width: 100%;
-			// width: 50px;
-			border-radius: 50px;
-			cursor: pointer;
-			outline: none;
-			border: none;
-			background-color: $purpleMid;
+	.mainConfigs {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+
+		.strategiesContainer {
+			display: flex;
+			gap: 8px;
+
+			.radioButton {
+				@include centering;
+				padding: 12px 20px;
+				border-radius: 12px;
+				font-size: 16px;
+				height: 40px;
+				// width: 50px;
+				// border-radius: 50px;
+				cursor: pointer;
+				outline: none;
+				border: none;
+				background-color: $purpleMid;
+
+				&:hover {
+					background-color: $purple;
+				}
+			}
+		}
+
+		.stacksContainer {
+			display: flex;
+			align-items: center;
+			gap: 8px;
+
+			.radioButton {
+				@include centering;
+				padding: 10px;
+				border-radius: 50px;
+				font-size: 16px;
+				cursor: pointer;
+				outline: none;
+				border: none;
+				background-color: $purpleMid;
+
+				&:hover {
+					background-color: $purple;
+				}
+			}
+		}
+
+		// POSITIONS DROP DOWN
+		.positionsContainer {
+			display: flex;
+			gap: 8px;
+			align-items: center;
+
+			.dropDown {
+				display: flex;
+				flex-direction: column;
+				position: relative;
+
+				.dropDownContent {
+					width: 100%;
+					border-radius: 0 0 $midRadius $midRadius;
+					overflow: hidden;
+					position: absolute;
+					text-align: center;
+					top: 100%;
+					left: 0;
+
+					div {
+						cursor: pointer;
+						background-color: $purpleLight;
+						padding: 4px;
+
+						&:hover {
+							background-color: $purpleMid;
+						}
+					}
+				}
+				.dropDownBlock {
+					width: 200px;
+					padding: 12px 20px;
+					text-align: center;
+					cursor: pointer;
+					border: 1px solid $purple;
+					border-radius: $midRadius;
+					background-color: $purpleMid;
+
+					&:hover {
+						background-color: $purple;
+					}
+				}
+
+				.openedDropDown {
+					border-radius: $midRadius $midRadius 0 0;
+					border: none;
+					// border-bottom: 1px solid $purple;
+				}
+			}
+		}
+
+		.descriptionContainer {
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+
+			label {
+				font-size: 2rem;
+			}
+
+			textarea {
+				font-size: 1.8rem;
+				outline: none;
+				border: none;
+				padding: 1.2rem 1.8rem;
+				color: $background;
+				border-radius: $largeRadius;
+			}
+		}
+
+		.save {
+			@include defaultButton;
+			border-radius: $midRadius;
+			background-color: $call;
+			transition: 0.2s;
+			width: 60%;
 
 			&:hover {
-				background-color: $purple;
+				// transform: translateY(-3px);
+				box-shadow: 0 5px 10px rgba($color: #252525, $alpha: 0.2);
+				opacity: 0.8;
 			}
 		}
 	}
@@ -212,20 +253,6 @@
 		}
 		&:after {
 			transform: rotate(-45deg);
-		}
-	}
-
-	.save {
-		@include defaultButton;
-		border-radius: $midRadius;
-		background-color: $call;
-		transition: 0.2s;
-		width: 60%;
-
-		&:hover {
-			transform: translateY(-3px);
-			box-shadow: 0 5px 10px rgba($color: #252525, $alpha: 0.2);
-			opacity: 0.8;
 		}
 	}
 }

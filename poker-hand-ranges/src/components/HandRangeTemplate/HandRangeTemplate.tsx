@@ -26,7 +26,7 @@ export default class HandRangeTemplate extends Component<IHandRangeTemplateProps
 		const { MainStore, configurable, onClick } = this.props;
 
 		return (
-			<div className={styles.handRangeTable}>
+			<article className={styles.handRangeTable}>
 				{this.props.table.map((row: Hand[], index) => (
 					<div key={index} className={styles.row}>
 						{row.map((cell: Hand) => (
@@ -55,7 +55,7 @@ export default class HandRangeTemplate extends Component<IHandRangeTemplateProps
 						))}
 					</div>
 				))}
-			</div>
+			</article>
 		);
 	}
 }

@@ -18,7 +18,7 @@ export default class NewTableModal extends Component<IPositionFilterProps> {
 		return (
 			<div className={styles.modalContainer}>
 				<div className={styles.modalContent}>
-					<HandRangeTemplate table={MainStore.newHandRange} />
+					{/* <HandRangeTemplate table={MainStore.newHandRange} /> */}
 					<HandRangeConfig />
 				</div>
 			</div>

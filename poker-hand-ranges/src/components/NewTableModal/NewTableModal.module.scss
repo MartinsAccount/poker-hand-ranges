@@ -2,6 +2,7 @@
 
 .modalContainer {
 	height: 90vh;
+	height: auto;
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -15,7 +16,7 @@
 
 	.modalContent {
 		display: flex;
-		padding: 100px 40px;
+		padding: 30px;
 		align-items: center;
 		// justify-content: center;
 		height: 100%;
