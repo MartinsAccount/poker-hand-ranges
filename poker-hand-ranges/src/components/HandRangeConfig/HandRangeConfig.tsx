@@ -16,6 +16,8 @@ export default class HandRangeConfig extends Component<IHandRangeConfigProps> {
 	render() {
 		const { MainStore } = this.props;
 
+		const strategy = MainStore.handRangeStrategy.strategy;
+
 		return (
 			<div className={styles.outerContainer}>
 				<div className={styles.titleContainer}>
@@ -34,7 +36,14 @@ export default class HandRangeConfig extends Component<IHandRangeConfigProps> {
 							<button
 								className={`${styles.radioButton}  ${MainStore.selectedAction === action && styles.activeButton}`}
 								onClick={() => MainStore!.selectAction(action)}
+								// @ts-ignore
+								onWheel={(e) => MainStore.wheelHandle(e, action)}
 							>
+								<span
+									className={styles.customActionButton}
+									data-action={action}
+									style={{ height: `${50 / (100 / MainStore.multiAction[action])}px` }}
+								></span>
 								{action}
 							</button>
 						))}
@@ -52,26 +61,32 @@ export default class HandRangeConfig extends Component<IHandRangeConfigProps> {
 						</div>
 					</div>
 
-					<div className={styles.customActionsContainer}></div>
-
 					<div className={styles.mainConfigs}>
+						{/* <p className={styles.categoryLabel}>Select strategy</p> */}
 						<div className={styles.strategiesContainer}>
 							{STRATEGIES.map((strategy: Strategies) => (
 								<button
 									onClick={(e) => MainStore.configureHandRangeProperties('strategy', strategy)}
-									className={styles.radioButton}
+									className={`${styles.radioButton} ${MainStore.handRangeStrategy.strategy === strategy && styles.activeButton}`}
 								>
 									{strategy}
 								</button>
 							))}
 						</div>
 
+						{/* <p className={styles.categoryLabel}>Select effective stack size</p> */}
 						<div className={styles.stacksContainer}>
 							{STACKS.map((stack: Stacks) => (
-								<button className={styles.radioButton}>{stack}</button>
+								<button
+									onClick={(e) => MainStore.configureHandRangeProperties('stack', stack)}
+									className={`${styles.radioButton} ${MainStore.handRangeStrategy.stack === stack && styles.activeButton}`}
+								>
+									{stack}bb
+								</button>
 							))}
 						</div>
 
+						{/* <p className={styles.categoryLabel}>Select hero & villain params</p> */}
 						<div className={styles.positionsContainer}>
 							<div className={styles.dropDown} onClick={() => MainStore.togglePositions('hero')}>
 								<div className={`${styles.dropDownBlock} ${MainStore.isOpenPositions.hero && styles.openedDropDown}`}>
@@ -85,8 +100,15 @@ export default class HandRangeConfig extends Component<IHandRangeConfigProps> {
 								</div>
 							</div>
 							<p>vs</p>
-							<div className={styles.dropDown} onClick={() => MainStore.togglePositions('villain')}>
-								<div className={`${styles.dropDownBlock} ${MainStore.isOpenPositions.villain && styles.openedDropDown}`}>
+							<div
+								className={`${styles.dropDown} ${strategy === 'PFI' && styles.disabled}`}
+								onClick={() => strategy !== 'PFI' && MainStore.togglePositions('villain')}
+							>
+								<div
+									className={`${styles.dropDownBlock} ${strategy === 'PFI' && styles.disabled} ${
+										MainStore.isOpenPositions.villain && styles.openedDropDown
+									}`}
+								>
 									{MainStore.handRangeStrategy.villain.position?.toUpperCase() || 'Select villain position'}
 								</div>
 								<div className={styles.dropDownContent}>
@@ -96,6 +118,19 @@ export default class HandRangeConfig extends Component<IHandRangeConfigProps> {
 										))}
 								</div>
 							</div>
+							{MainStore.handRangeStrategy.strategy === 'Defense' && (
+								<div className={styles.dropDown} onClick={() => MainStore.toggleVillainActions()}>
+									<div className={`${styles.dropDownBlock} ${MainStore.isOpenActions && styles.openedDropDown}`}>
+										{MainStore.handRangeStrategy.villain.action || 'Select villain action'}
+									</div>
+									<div className={styles.dropDownContent}>
+										{MainStore.isOpenActions &&
+											ACTIONS.map((action: Actions) => (
+												<div onClick={() => MainStore.configureHandRangeProperties('villain', action, true)}>{action}</div>
+											))}
+									</div>
+								</div>
+							)}
 						</div>
 
 						<div className={styles.descriptionContainer}>

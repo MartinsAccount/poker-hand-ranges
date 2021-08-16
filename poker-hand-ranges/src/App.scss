@@ -33,11 +33,30 @@ html {
 	cursor: url('../src/assets/spade.png'), auto;
 }
 
+[data-action='fold'] {
+	background-color: $fold;
+	opacity: 0.8;
+}
+[data-action='limp'] {
+	background-color: $limp;
+}
+[data-action='call'] {
+	background-color: $call;
+}
+[data-action='allin'] {
+	background-color: $allin;
+}
+[data-action='raise'] {
+	background-color: $raise;
+}
+[data-action='3-bet'] {
+	background-color: $_3bet;
+}
+[data-action='4-bet'] {
+	background-color: $_4bet;
+}
+
 .App {
 	background-color: $background;
 	min-height: 100vh;
-
-	// background-image: url('./assets/background.jpg');
-	// background-repeat: no-repeat;
-	// background-size: cover;
 }

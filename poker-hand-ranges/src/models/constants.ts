@@ -8,6 +8,6 @@ export const STACKS: Stacks[] = [10, 12, 15, 20, 25, 30, 40, 60];
 
 export const ACTIONS: Actions[] = ['fold', 'limp', 'allin', 'raise', 'call', '3-bet', '4-bet'];
 
-export const STRATEGIES: Strategies[] = ['PFI', 'Defense', 'Push-Fold'];
+export const STRATEGIES: Strategies[] = ['PFI', 'Defense', 'Push-Fold', 'vs 3-bet'];
 
-export const GROUPS_SELECT: Groups[] = ['Aces', 'Suited cards', 'Off-suited cards', 'Pocket pairs'];
+export const GROUPS_SELECT: Groups[] = ['Aces', 'Suited cards', 'Off-suited cards', 'Pocket pairs', 'All cards'];

@@ -1,19 +1,59 @@
 import { action, computed, flow, observable, toJS } from 'mobx';
-import { CARDS, POSITIONS } from '../models/constants';
-import { Actions, Groups, Hand, HandRange, Player, Players, Positions } from '../models/models';
+import { ACTIONS, CARDS, POSITIONS } from '../models/constants';
+import { Actions, Groups, Hand, HandRange, MultiAction, Player, Players, Positions } from '../models/models';
 
 export class MainStore {
 	@observable newHandRange: Array<Hand[]> = [];
 	@observable handRangeStrategy: HandRange = new HandRange();
 
+	@observable isOpenActions: boolean = false;
 	@observable isMouseDown: boolean = false;
 	@observable isOpenModal: boolean = false;
 	@observable selectedAction: Actions = 'fold';
 	@observable isOpenPositions: { hero: boolean; villain: boolean } = { hero: false, villain: false };
 	@observable positionFilter: { hero: Positions; villain: Positions } = { hero: 'bb', villain: 'sb' };
 
+	@observable createMultiAction: boolean = false;
+	@observable multiAction: { [key: string]: number } = {}; // {fold: 50}
+
 	@observable heroParams: Player = { position: null, action: null };
 	@observable villainParams: Player = { position: null, action: null };
+
+	@action wheelHandle(e: WheelEvent, action: Actions) {
+		// deltaY = +100/-100
+		if (!this.createMultiAction) {
+			return;
+		}
+		if (this.multiAction[action] === 100 && e.deltaY === -100) {
+			// 100 fölé nem megy
+			return;
+		}
+		if (this.multiAction[action] === 0 && e.deltaY === 100) {
+			// 0 alá nem megy
+			return;
+		}
+		if (this.sumActionsPercentages === 100 && e.deltaY === -100) {
+			// összese 100% főlé nem megy
+			return;
+		}
+		if (this.multiAction[action]) {
+			this.multiAction[action] += e.deltaY * -0.05;
+		}
+		if (!this.multiAction[action] && e.deltaY === -100) {
+			// ha még nincs az objectben
+			this.multiAction[action] = 0 + e.deltaY * -0.05;
+		}
+
+		console.log(toJS(this.multiAction));
+	}
+
+	@computed get sumActionsPercentages() {
+		if (Object.keys(this.multiAction).length) {
+			return Object.values(this.multiAction).reduce((prev, cur) => prev + cur);
+		}
+
+		return 0;
+	}
 
 	@action createRange() {
 		// card schema : "QJo" || "32s" || "KK"
@@ -75,16 +115,41 @@ export class MainStore {
 					if (cell.hand === hand.hand) {
 						// console.log(toJS(cell));
 
+						if (click && cell.isMultiActions && cell.multiActions !== null) {
+							cell.isMultiActions = false;
+							cell.multiActions.length = 0;
+							return;
+						}
 						if (click && cell.action !== null) {
 							cell.action = null;
 							return;
 						}
+
+						if (this.createMultiAction) {
+							cell.isMultiActions = true;
+
+							let _multiActions: any = [];
+
+							for (const _action in this.multiAction) {
+								if (this.multiAction[_action]) {
+									_multiActions.push({
+										action: _action,
+										percent: this.multiAction[_action]
+									});
+								}
+							}
+
+							cell.multiActions = _multiActions;
+							return;
+						}
+
 						cell.action = this.selectedAction;
 					}
 				});
 			});
 		}
 	}
+
 	@action selectGroup(group: Groups) {
 		this.newHandRange.forEach((row: Hand[]) => {
 			row.forEach((cell: Hand) => {
@@ -109,6 +174,9 @@ export class MainStore {
 							cell.action = this.selectedAction;
 						}
 						break;
+					case 'All cards':
+						cell.action = this.selectedAction;
+						break;
 				}
 			});
 		});
@@ -121,16 +189,21 @@ export class MainStore {
 		this.isMouseDown = false;
 	}
 
-	@action configureHandRangeProperties(key: string, value: any) {
-		if (typeof this.handRangeStrategy[key] !== 'object' || this.handRangeStrategy[key] === null) {
-			this.handRangeStrategy[key] = value;
+	@action configureHandRangeProperties(key: string, value: any, isVillainAction?: boolean) {
+		const _handRangeStrategy = { ...this.handRangeStrategy };
+
+		if (typeof _handRangeStrategy[key] !== 'object' || _handRangeStrategy[key] === null) {
+			_handRangeStrategy[key] = value;
 		}
 		if (key === 'hero' || key === 'villain') {
-			this.handRangeStrategy[key].position = value;
+			if (isVillainAction) {
+				_handRangeStrategy[key].action = value;
+			} else {
+				_handRangeStrategy[key].position = value;
+			}
 		}
-		if (typeof this.handRangeStrategy[key] === 'object' && this.handRangeStrategy[key] !== null) {
-			// this.handRangeStrategy[key] = value
-		}
+
+		this.handRangeStrategy = _handRangeStrategy;
 	}
 
 	// TODO: Kiszervezni valahogy ezt az iterációt
@@ -150,6 +223,9 @@ export class MainStore {
 	}
 	@action togglePositions(player: Players) {
 		this.isOpenPositions[player] = !this.isOpenPositions[player];
+	}
+	@action toggleVillainActions() {
+		this.isOpenActions = !this.isOpenActions;
 	}
 
 	@action changePositions(position: Positions, player: Players) {

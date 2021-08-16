@@ -28,14 +28,16 @@
 	gap: 25px;
 
 	.actionsContainer {
+		height: 468px;
 		display: flex;
 		flex-direction: column;
-		justify-content: flex-start;
+		justify-content: space-evenly;
 		gap: 8px;
 
 		.radioButton {
 			@include centering;
-			padding: 12px 20px;
+			// padding: 12px 20px;
+			position: relative;
 			border-radius: 12px;
 			font-size: 16px;
 			height: 50px;
@@ -45,9 +47,20 @@
 			outline: none;
 			border: none;
 			background-color: $purpleMid;
+			overflow: hidden;
 
 			&:hover {
-				background-color: $purple;
+				// background-color: $purple;
+			}
+
+			.customActionButton {
+				width: 50px;
+				border-radius: 50px;
+				position: absolute;
+				left: 50%;
+				bottom: 0;
+				transform: translateX(-50%);
+				opacity: 0.7;
 			}
 		}
 
@@ -63,11 +76,10 @@
 
 		.groupsContainer {
 			display: flex;
-			justify-content: space-evenly;
+			justify-content: flex-start;
+			gap: 8px;
 			align-items: center;
-			// position: absolute;
-			// left: 30px;
-			// bottom: 20px;
+			flex-wrap: wrap;
 			width: 100%;
 
 			.groupsButton {
@@ -97,6 +109,12 @@
 		justify-content: space-between;
 		align-items: center;
 
+		.categoryLabel {
+			font-size: 16px;
+			text-align: start;
+			width: 100%;
+		}
+
 		.strategiesContainer {
 			display: flex;
 			gap: 8px;
@@ -109,6 +127,7 @@
 				height: 40px;
 				// width: 50px;
 				// border-radius: 50px;
+				align-items: flex-start;
 				cursor: pointer;
 				outline: none;
 				border: none;
@@ -118,11 +137,16 @@
 					background-color: $purple;
 				}
 			}
+
+			.activeButton {
+				background-color: $purple;
+			}
 		}
 
 		.stacksContainer {
 			display: flex;
 			align-items: center;
+			flex-wrap: wrap;
 			gap: 8px;
 
 			.radioButton {
@@ -138,6 +162,10 @@
 				&:hover {
 					background-color: $purple;
 				}
+			}
+
+			.activeButton {
+				background-color: $purple;
 			}
 		}
 
@@ -190,6 +218,11 @@
 					border: none;
 					// border-bottom: 1px solid $purple;
 				}
+			}
+
+			.disabled {
+				cursor: not-allowed;
+				opacity: 0.5;
 			}
 		}
 
