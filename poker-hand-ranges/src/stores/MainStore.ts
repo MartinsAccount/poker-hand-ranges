@@ -150,18 +150,24 @@ export class MainStore {
 		return _multiActions;
 	}
 
+	// TODO: Switch-nél kilehet cserélni a function-okat
+	@action testFunc(cell) {
+		if (this.createMultiAction) {
+			cell.isMultiActions = true;
+			cell.multiActions = this.getCurrentMultiActions;
+			return;
+		}
+		cell.isMultiActions = false;
+		cell.action = this.selectedAction;
+	}
+
 	@action selectGroup(group: Groups) {
 		this.newHandRange.forEach((row: Hand[]) => {
 			row.forEach((cell: Hand) => {
 				switch (group) {
 					case 'Aces':
 						if (cell.hand.includes('A')) {
-							if (this.createMultiAction) {
-								cell.isMultiActions = true;
-								cell.multiActions = this.getCurrentMultiActions;
-								return;
-							}
-							cell.action = this.selectedAction;
+							this.testFunc(cell);
 						}
 						break;
 					case 'Suited cards':
@@ -171,6 +177,7 @@ export class MainStore {
 								cell.multiActions = this.getCurrentMultiActions;
 								return;
 							}
+							cell.isMultiActions = false;
 							cell.action = this.selectedAction;
 						}
 						break;
@@ -181,6 +188,7 @@ export class MainStore {
 								cell.multiActions = this.getCurrentMultiActions;
 								return;
 							}
+							cell.isMultiActions = false;
 							cell.action = this.selectedAction;
 						}
 						break;
@@ -191,6 +199,7 @@ export class MainStore {
 								cell.multiActions = this.getCurrentMultiActions;
 								return;
 							}
+							cell.isMultiActions = false;
 							cell.action = this.selectedAction;
 						}
 						break;
@@ -200,6 +209,7 @@ export class MainStore {
 							cell.multiActions = this.getCurrentMultiActions;
 							return;
 						}
+						cell.isMultiActions = false;
 						cell.action = this.selectedAction;
 						break;
 					case 'Reset table':
