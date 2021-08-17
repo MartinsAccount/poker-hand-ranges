@@ -22,6 +22,10 @@ export default class HandRangeTemplate extends Component<IHandRangeTemplateProps
 		this.props.MainStore!.createRange();
 	}
 
+	logTest = (e) => {
+		console.log('teszt', e.key);
+	};
+
 	render() {
 		const { MainStore, configurable, onClick } = this.props;
 

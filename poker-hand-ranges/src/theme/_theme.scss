@@ -69,7 +69,7 @@ $cellPadding: 18px;
 	@include centering;
 	border-radius: $midRadius;
 	padding: 16px;
-	cursor: pointer;
+	cursor: url('../assets/club.png'), auto;
 	outline: none;
 	border: none;
 }

@@ -82,10 +82,7 @@ export class MainStore {
 						hand: `${card}${CARDS[round]}o`,
 						action: null,
 						isMultiActions: true,
-						multiActions: [
-							// { action: 'call', percent: 50 },
-							// { action: 'allin', percent: 20 }
-						],
+						multiActions: [],
 						combos: 12
 					});
 				}
@@ -114,7 +111,6 @@ export class MainStore {
 				row.forEach((cell: Hand) => {
 					if (cell.hand === hand.hand) {
 						// console.log(toJS(cell));
-
 						if (click && cell.isMultiActions && cell.multiActions !== null) {
 							cell.isMultiActions = false;
 							cell.multiActions.length = 0;
@@ -127,19 +123,8 @@ export class MainStore {
 
 						if (this.createMultiAction) {
 							cell.isMultiActions = true;
+							cell.multiActions = this.getCurrentMultiActions;
 
-							let _multiActions: any = [];
-
-							for (const _action in this.multiAction) {
-								if (this.multiAction[_action]) {
-									_multiActions.push({
-										action: _action,
-										percent: this.multiAction[_action]
-									});
-								}
-							}
-
-							cell.multiActions = _multiActions;
 							return;
 						}
 
@@ -150,32 +135,78 @@ export class MainStore {
 		}
 	}
 
+	@computed get getCurrentMultiActions() {
+		let _multiActions: any = [];
+
+		for (const _action in this.multiAction) {
+			if (this.multiAction[_action]) {
+				_multiActions.push({
+					action: _action,
+					percent: this.multiAction[_action]
+				});
+			}
+		}
+
+		return _multiActions;
+	}
+
 	@action selectGroup(group: Groups) {
 		this.newHandRange.forEach((row: Hand[]) => {
 			row.forEach((cell: Hand) => {
 				switch (group) {
 					case 'Aces':
 						if (cell.hand.includes('A')) {
+							if (this.createMultiAction) {
+								cell.isMultiActions = true;
+								cell.multiActions = this.getCurrentMultiActions;
+								return;
+							}
 							cell.action = this.selectedAction;
 						}
 						break;
 					case 'Suited cards':
 						if (cell.hand.includes('s')) {
+							if (this.createMultiAction) {
+								cell.isMultiActions = true;
+								cell.multiActions = this.getCurrentMultiActions;
+								return;
+							}
 							cell.action = this.selectedAction;
 						}
 						break;
 					case 'Off-suited cards':
 						if (cell.hand.includes('o')) {
+							if (this.createMultiAction) {
+								cell.isMultiActions = true;
+								cell.multiActions = this.getCurrentMultiActions;
+								return;
+							}
 							cell.action = this.selectedAction;
 						}
 						break;
 					case 'Pocket pairs':
 						if (cell.hand.charAt(0) === cell.hand.charAt(1)) {
+							if (this.createMultiAction) {
+								cell.isMultiActions = true;
+								cell.multiActions = this.getCurrentMultiActions;
+								return;
+							}
 							cell.action = this.selectedAction;
 						}
 						break;
 					case 'All cards':
+						if (this.createMultiAction) {
+							cell.isMultiActions = true;
+							cell.multiActions = this.getCurrentMultiActions;
+							return;
+						}
 						cell.action = this.selectedAction;
+						break;
+					case 'Reset table':
+						cell.isMultiActions = false;
+						cell.multiActions = [];
+						cell.action = null;
+
 						break;
 				}
 			});
@@ -214,13 +245,58 @@ export class MainStore {
 	// 		});
 	// 	});
 	// }
+	@action toggleEnabledMultiAction() {
+		this.createMultiAction = !this.createMultiAction;
+
+		if (this.createMultiAction) {
+			this.selectedAction = null;
+		}
+		if (!this.createMultiAction) {
+			this.multiAction = {};
+		}
+	}
 
 	@action toggleModal() {
 		this.isOpenModal = !this.isOpenModal;
 	}
 	@action selectAction(action: Actions) {
+		if (this.createMultiAction) {
+			this.selectedAction = null;
+			return;
+		}
+
 		this.selectedAction = action;
 	}
+
+	// TODO: Nem működik még
+	@action selectActionWithKey(e: React.KeyboardEvent<HTMLElement>) {
+		console.log(e.key);
+
+		// switch (e.key) {
+		// 	case 70: // F
+		// 		this.selectedAction = 'fold';
+		// 		break;
+		// 	case 76: // L
+		// 		this.selectedAction = 'limp';
+		// 		break;
+		// 	case 67: // C
+		// 		this.selectedAction = 'call';
+		// 		break;
+		// 	case 65: // A
+		// 		this.selectedAction = 'allin';
+		// 		break;
+		// 	case 82: // R
+		// 		this.selectedAction = 'raise';
+		// 		break;
+		// 	case 51: // 3
+		// 		this.selectedAction = '3-bet';
+		// 		break;
+		// 	case 52: // 4
+		// 		this.selectedAction = '4-bet';
+		// 		break;
+		// }
+	}
+
 	@action togglePositions(player: Players) {
 		this.isOpenPositions[player] = !this.isOpenPositions[player];
 	}
@@ -240,6 +316,10 @@ export class MainStore {
 	}
 
 	@action positionFiltering(pos: Positions, player: Players) {
+		if (this.positionFilter[player] === pos) {
+			this.positionFilter[player] = null;
+			return;
+		}
 		this.positionFilter[player] = pos;
 	}
 

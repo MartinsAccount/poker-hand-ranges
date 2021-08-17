@@ -7,6 +7,43 @@
 	gap: 20px;
 }
 
+.topPageFilters {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 8px;
+
+	.stackFilter {
+	}
+	.actionFilter {
+		display: flex;
+		align-items: center;
+
+		.hero {
+		}
+		.villain {
+		}
+	}
+
+	.filterButton {
+		display: inline-flex;
+		margin: 6px;
+		padding: 12px 20px;
+		border-radius: 12px;
+		font-size: 16px;
+		height: 40px;
+		align-items: flex-start;
+		cursor: url('../../assets/club.png'), auto;
+		outline: none;
+		border: none;
+		background-color: $purpleMid;
+
+		&:hover {
+			background-color: $purple;
+		}
+	}
+}
+
 .newTableButton {
 	@include defaultButton;
 	position: relative;

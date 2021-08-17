@@ -1,6 +1,7 @@
 import { inject, observer } from 'mobx-react';
 import React, { Component } from 'react';
-import { HandRange } from '../../models/models';
+import { ACTIONS, STACKS } from '../../models/constants';
+import { Actions, HandRange, Stacks } from '../../models/models';
 import { MainStore } from '../../stores/MainStore';
 import HandRangeTemplate from '../HandRangeTemplate/HandRangeTemplate';
 import NewTableModal from '../NewTableModal/NewTableModal';
@@ -19,8 +20,29 @@ export default class StrategiesPage extends Component<IStrategiesPageProps> {
 		const { MainStore } = this.props;
 
 		return (
-			<div>
-				<main className={styles.mainContainer}>
+			<main>
+				<section className={styles.topPageFilters}>
+					<article className={styles.stackFilter}>
+						{STACKS.map((stack: Stacks) => (
+							<button className={styles.filterButton}>{stack}bb</button>
+						))}
+					</article>
+					<article className={styles.actionFilter}>
+						<article className={styles.hero}>
+							{ACTIONS.map((action: Actions) => (
+								<button className={styles.filterButton}>{action}</button>
+							))}
+						</article>
+						vs
+						<article className={styles.villain}>
+							{ACTIONS.map((action: Actions) => (
+								<button className={styles.filterButton}>{action}</button>
+							))}
+						</article>
+					</article>
+				</section>
+
+				<section className={styles.mainContainer}>
 					{data.map((handRange: HandRange) => {
 						if (handRange.hero.position === MainStore.positionFilter.hero) {
 							return <HandRangeTemplate table={handRange.hands} />;
@@ -32,11 +54,11 @@ export default class StrategiesPage extends Component<IStrategiesPageProps> {
 					<button onClick={() => MainStore.toggleModal()} className={styles.newTableButton}>
 						New hand range
 					</button>
-				</main>
+				</section>
 
 				{MainStore.isOpenModal && <NewTableModal />}
 				<PositionFilter />
-			</div>
+			</main>
 		);
 	}
 }

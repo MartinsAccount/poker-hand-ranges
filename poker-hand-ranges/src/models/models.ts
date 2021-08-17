@@ -6,7 +6,7 @@ export type Strategies = 'PFI' | 'Defense' | 'Push-Fold' | 'vs 3-bet';
 export type Stacks = 10 | 12 | 15 | 20 | 25 | 30 | 40 | 60;
 export type Stages = 'preflop' | 'flop' | 'turn' | 'river';
 export type Players = 'hero' | 'villain';
-export type Groups = 'Aces' | 'Suited cards' | 'Off-suited cards' | 'Pocket pairs' | 'All cards';
+export type Groups = 'Aces' | 'Suited cards' | 'Off-suited cards' | 'Pocket pairs' | 'All cards' | 'Reset table';
 type BetSizes = 2 | 2.2 | 2.5 | 3;
 
 export interface Player {

@@ -20,6 +20,13 @@ export default class HandRangeConfig extends Component<IHandRangeConfigProps> {
 
 		return (
 			<div className={styles.outerContainer}>
+				<div className={styles.switchContainer}>
+					<label className={styles.switch}>
+						<input type="checkbox" checked={MainStore.createMultiAction} onChange={() => MainStore.toggleEnabledMultiAction()} />
+						<span className={styles.slider}></span>
+					</label>
+				</div>
+
 				<div className={styles.titleContainer}>
 					{/* <label htmlFor="title">Title</label> */}
 					<input
@@ -32,19 +39,24 @@ export default class HandRangeConfig extends Component<IHandRangeConfigProps> {
 
 				<div className={styles.configContainer}>
 					<div className={styles.actionsContainer}>
-						{ACTIONS.map((action: Actions) => (
+						{ACTIONS.map((action: Actions, index) => (
 							<button
-								className={`${styles.radioButton}  ${MainStore.selectedAction === action && styles.activeButton}`}
+								key={index}
+								className={`${styles.radioButton}  ${MainStore.selectedAction === action && styles.activeButton} ${
+									MainStore.multiAction[action] > 0 && styles.activeButton
+								}`}
 								onClick={() => MainStore!.selectAction(action)}
+								data-action={action}
 								// @ts-ignore
 								onWheel={(e) => MainStore.wheelHandle(e, action)}
 							>
 								<span
 									className={styles.customActionButton}
-									data-action={action}
+									// data-action={action}
 									style={{ height: `${50 / (100 / MainStore.multiAction[action])}px` }}
 								></span>
-								{action}
+								{action} <br />
+								{MainStore.createMultiAction && `${MainStore.multiAction[action] || 0}%`}
 							</button>
 						))}
 					</div>
@@ -53,8 +65,8 @@ export default class HandRangeConfig extends Component<IHandRangeConfigProps> {
 						<HandRangeTemplate table={MainStore.newHandRange} />
 
 						<div className={styles.groupsContainer}>
-							{GROUPS_SELECT.map((group: Groups) => (
-								<button onClick={() => MainStore.selectGroup(group)} className={styles.groupsButton}>
+							{GROUPS_SELECT.map((group: Groups, index) => (
+								<button key={index} onClick={() => MainStore.selectGroup(group)} className={styles.groupsButton}>
 									{group}
 								</button>
 							))}
@@ -64,8 +76,9 @@ export default class HandRangeConfig extends Component<IHandRangeConfigProps> {
 					<div className={styles.mainConfigs}>
 						{/* <p className={styles.categoryLabel}>Select strategy</p> */}
 						<div className={styles.strategiesContainer}>
-							{STRATEGIES.map((strategy: Strategies) => (
+							{STRATEGIES.map((strategy: Strategies, index) => (
 								<button
+									key={index}
 									onClick={(e) => MainStore.configureHandRangeProperties('strategy', strategy)}
 									className={`${styles.radioButton} ${MainStore.handRangeStrategy.strategy === strategy && styles.activeButton}`}
 								>
@@ -76,8 +89,9 @@ export default class HandRangeConfig extends Component<IHandRangeConfigProps> {
 
 						{/* <p className={styles.categoryLabel}>Select effective stack size</p> */}
 						<div className={styles.stacksContainer}>
-							{STACKS.map((stack: Stacks) => (
+							{STACKS.map((stack: Stacks, index) => (
 								<button
+									key={index}
 									onClick={(e) => MainStore.configureHandRangeProperties('stack', stack)}
 									className={`${styles.radioButton} ${MainStore.handRangeStrategy.stack === stack && styles.activeButton}`}
 								>
@@ -94,8 +108,10 @@ export default class HandRangeConfig extends Component<IHandRangeConfigProps> {
 								</div>
 								<div className={styles.dropDownContent}>
 									{MainStore.isOpenPositions.hero &&
-										POSITIONS.map((pos: Positions) => (
-											<div onClick={() => MainStore.configureHandRangeProperties('hero', pos)}>{pos.toUpperCase()}</div>
+										POSITIONS.map((pos: Positions, index) => (
+											<div key={index} onClick={() => MainStore.configureHandRangeProperties('hero', pos)}>
+												{pos.toUpperCase()}
+											</div>
 										))}
 								</div>
 							</div>
@@ -125,8 +141,10 @@ export default class HandRangeConfig extends Component<IHandRangeConfigProps> {
 									</div>
 									<div className={styles.dropDownContent}>
 										{MainStore.isOpenActions &&
-											ACTIONS.map((action: Actions) => (
-												<div onClick={() => MainStore.configureHandRangeProperties('villain', action, true)}>{action}</div>
+											ACTIONS.map((action: Actions, index) => (
+												<div key={index} onClick={() => MainStore.configureHandRangeProperties('villain', action, true)}>
+													{action}
+												</div>
 											))}
 									</div>
 								</div>

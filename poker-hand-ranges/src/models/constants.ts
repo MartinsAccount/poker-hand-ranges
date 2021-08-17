@@ -10,4 +10,4 @@ export const ACTIONS: Actions[] = ['fold', 'limp', 'allin', 'raise', 'call', '3-
 
 export const STRATEGIES: Strategies[] = ['PFI', 'Defense', 'Push-Fold', 'vs 3-bet'];
 
-export const GROUPS_SELECT: Groups[] = ['Aces', 'Suited cards', 'Off-suited cards', 'Pocket pairs', 'All cards'];
+export const GROUPS_SELECT: Groups[] = ['Aces', 'Suited cards', 'Off-suited cards', 'Pocket pairs', 'All cards', 'Reset table'];

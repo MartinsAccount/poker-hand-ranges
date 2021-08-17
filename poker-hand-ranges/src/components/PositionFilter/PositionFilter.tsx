@@ -18,8 +18,9 @@ export default class PositionFilter extends Component<IPositionFilterProps> {
 		return (
 			<>
 				<div className={`${styles.positionsContainer} ${styles.heroPositions}`}>
-					{POSITIONS.map((pos: Positions) => (
+					{POSITIONS.map((pos: Positions, index) => (
 						<div
+							key={index}
 							className={`${styles.positionButton} ${MainStore.positionFilter.hero === pos && styles.activeButton} 
 							${MainStore.positionFilter.villain === pos && styles.disabled}`}
 							onClick={() => MainStore.positionFilter.villain !== pos && MainStore.positionFiltering(pos, 'hero')}
@@ -29,8 +30,9 @@ export default class PositionFilter extends Component<IPositionFilterProps> {
 					))}
 				</div>
 				<div className={`${styles.positionsContainer} ${styles.villainPositions}`}>
-					{POSITIONS.map((pos: Positions) => (
+					{POSITIONS.map((pos: Positions, index) => (
 						<div
+							key={index}
 							className={`${styles.positionButton} ${MainStore.positionFilter.hero === pos && styles.disabled}
 							 ${MainStore.positionFilter.villain === pos && styles.activeButton}`}
 							onClick={() => MainStore.positionFilter.hero !== pos && MainStore.positionFiltering(pos, 'villain')}
